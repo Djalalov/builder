@@ -1,13 +1,25 @@
 import React from "react";
+import Hero from "./Hero";
 import SwapIcon from "./SwapIcon";
+import {
+	ImFacebook2,
+	ImInstagram,
+	ImTelegram,
+	ImLinkedin,
+	ImInfo,
+	ImClipboard,
+} from "react-icons/im";
+import { BiBuildings } from "react-icons/bi";
+import { IoPeopleOutline } from "react-icons/io5";
+import { MdOutlineSms } from "react-icons/md";
 
 const Header = () => {
 	return (
-		<div className="drawer dark:bg-[#292C35]">
+		<div className="drawer dark:bg-[#292C35] backdrop-blur-sm">
 			<input id="my-drawer-3" type="checkbox" className="drawer-toggle " />
-			<div className="drawer-content flex flex-col ">
+			<div className="drawer-content flex flex-col backdrop-blur-sm">
 				{/*Navbar*/}
-				<div className="w-full navbar bg-base-300 dark:bg-[#292C35]">
+				<div className="w-full sticky top-0 xl:container xl:mx-auto navbar dark:bg-[#292C35] backdrop-blur-sm">
 					<div className="flex-none lg:hidden">
 						<label htmlFor="my-drawer-3" className="btn btn-square btn-ghost">
 							<svg
@@ -25,8 +37,8 @@ const Header = () => {
 							</svg>
 						</label>
 					</div>
-					<div className="flex-1 mx-2 text-2xl">Builder</div>
-					<div className="flex-none hidden lg:block">
+					<div className="flex navbar-start mx-2 text-2xl">Builder</div>
+					<div className="flex-none navbar-center hidden lg:block ">
 						<ul className="menu menu-horizontal">
 							<li>
 								<a>Navbar Item 1</a>
@@ -34,32 +46,61 @@ const Header = () => {
 							<li>
 								<a>Navbar Item 2</a>
 							</li>
+							<li>
+								<a>Navbar Item 2</a>
+							</li>
 						</ul>
 					</div>
-					<div className="navbar-end px-2">
-						<SwapIcon />
+					<div className="navbar-end px-2 flex gap-6">
+						<SwapIcon /> <span className="hidden">|</span>
+						<ImFacebook2 className="hidden text-3xl" />
+						<ImInstagram className="hidden text-3xl" />
+						<ImTelegram className=" hidden text-3xl" />
+						<ImLinkedin className="hidden text-3xl" />
 					</div>
 				</div>
-				<div className="">
-					<h1 className="text-6xl font-bold pt-8 px-4">
-						Loremum ip lor sitwe amet elit
-					</h1>
-					<p className="font-bold pt-8 px-4">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam
-						cuebitis ad velit nostrum tempore? Dignissimos earum delectus atque.
-					</p>
-				</div>
+				<Hero />
 			</div>
 			<div className="drawer-side">
-				<label htmlFor="my-drawer-3" className="drawer-overlay"></label>
-				<ul className="menu p-4 overflow-y-auto w-60 bg-base-100 dark:bg-[#292C35]">
-					<li>
-						<a>Sidebar Item 1</a>
-					</li>
-					<li>
-						<a>Sidebar Item 2</a>
-					</li>
-				</ul>
+				<label htmlFor="my-drawer-3" className="drawer-overlay "></label>
+				<div className="menu p-4 overflow-y-auto w-60 bg-base-100/80 dark:bg-black/80 backdrop-blur-sm flex flex-col justify-between">
+					<div className="pt-2">
+						<h1 className="text-center text-3xl mb-4">Builder</h1>
+						<hr />
+						<ul className="space-y-8 pt-24">
+							<li className="flex flex-row">
+								<ImInfo className="w-14 h-14" />
+								<a>Biz haqimizda</a>
+							</li>
+							<li className="flex flex-row">
+								<ImClipboard className="w-14 h-14 " />
+								<a>Xizmatlar</a>
+							</li>
+							<li className="flex flex-row">
+								<BiBuildings className="w-14 h-14 " />
+								<a>Loyihalar</a>
+							</li>
+							<li className="flex flex-row">
+								<IoPeopleOutline className="w-14 h-14" />
+								<a>Mijozlar</a>
+							</li>
+							<li className="flex flex-row">
+								<MdOutlineSms className="w-14 h-14" />
+								<a>Aloqa</a>
+							</li>
+						</ul>
+					</div>
+					<div className="pb-2 px-4 flex-col">
+						<div className="flex gap-6">
+							<ImFacebook2 className="text-2xl" />
+							<ImInstagram className="text-2xl" />
+							<ImTelegram className="text-2xl" />
+							<ImLinkedin className="text-2xl" />
+						</div>
+						<p className="w-full p-4 text-center">Andijon, Uzbekistan</p>
+						<p className="px-4 text-center">998 90 269 99 77</p>
+					</div>
+				</div>
 			</div>
 		</div>
 	);

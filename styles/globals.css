@@ -8,6 +8,14 @@
 		@apply min-h-screen;
 	}
 }
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+* {
+	box-sizing: border-box;
+}
 /* main - #E09145 */
 /* main2 -  #FCD9B8 */
 /* Primary - #17181D */
