@@ -1,8 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Image from "next/image";
-import { title } from "process";
-import Navbar from "../components/Navbar";
+import Header from "../components/Header";
 
 const Home: NextPage = () => {
 	return (
@@ -13,8 +11,8 @@ const Home: NextPage = () => {
 				<link rel="icon" href="" />
 			</Head>
 
-			<main className="bg-slate-200 dark:bg-zinc-700 h-96 dark:text-gray-100 text-gray-900">
-				<Navbar />
+			<main className="">
+				<Header />
 			</main>
 
 			<footer className=""></footer>

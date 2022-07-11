@@ -4,7 +4,11 @@
 
 @layer base {
 	body {
-		@apply bg-gray-50 text-gray-900 dark:bg-black dark:text-gray-100;
+		@apply bg-gray-50 text-gray-900 dark:bg-[#17181D] dark:text-gray-100;
 		@apply min-h-screen;
 	}
 }
+/* main - #E09145 */
+/* main2 -  #FCD9B8 */
+/* Primary - #17181D */
+/* Secondary - #292C35 */

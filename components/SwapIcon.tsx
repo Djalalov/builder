@@ -17,17 +17,21 @@ const SwapIcon = () => {
 	return (
 		<>
 			{currentTheme === "dark" ? (
-				<SunIcon
-					className="swap-on w-10 h-10 text-yellow-500 "
-					role="button"
-					onClick={() => setTheme("light")}
-				/>
+				<div className="swap-rotate">
+					<SunIcon
+						className="swap-on w-8 h-8 text-yellow-500 "
+						role="button"
+						onClick={() => setTheme("light")}
+					/>
+				</div>
 			) : (
-				<MoonIcon
-					className="swap-off w-10 h-10 text-gray-900 "
-					role="button"
-					onClick={() => setTheme("dark")}
-				/>
+				<div className=" swap-rotate">
+					<MoonIcon
+						className="swap-off w-8 h-8 text-gray-900 "
+						role="button"
+						onClick={() => setTheme("dark")}
+					/>
+				</div>
 			)}
 		</>
 	);
