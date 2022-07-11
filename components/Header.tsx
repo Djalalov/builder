@@ -66,39 +66,43 @@ const Header = () => {
 				<div className="menu p-4 overflow-y-auto w-60 bg-base-100/80 dark:bg-black/80 backdrop-blur-sm flex flex-col justify-between">
 					<div className="pt-2">
 						<h1 className="text-center text-3xl mb-4">Builder</h1>
-						<hr />
+						<hr className="bg-black" />
 						<ul className="space-y-8 pt-24">
 							<li className="flex flex-row">
-								<ImInfo className="w-14 h-14" />
-								<a>Biz haqimizda</a>
+								<ImInfo className="w-14 h-14 font-bold" />
+								<a className="font-semibold">Biz haqimizda</a>
 							</li>
 							<li className="flex flex-row">
-								<ImClipboard className="w-14 h-14 " />
-								<a>Xizmatlar</a>
+								<ImClipboard className="w-14 h-14 font-bold" />
+								<a className="font-semibold">Xizmatlar</a>
 							</li>
 							<li className="flex flex-row">
 								<BiBuildings className="w-14 h-14 " />
-								<a>Loyihalar</a>
+								<a className="font-semibold">Loyihalar</a>
 							</li>
 							<li className="flex flex-row">
 								<IoPeopleOutline className="w-14 h-14" />
-								<a>Mijozlar</a>
+								<a className="font-semibold">Mijozlar</a>
 							</li>
 							<li className="flex flex-row">
 								<MdOutlineSms className="w-14 h-14" />
-								<a>Aloqa</a>
+								<a className="font-semibold">Aloqa</a>
 							</li>
 						</ul>
 					</div>
 					<div className="pb-2 px-4 flex-col">
-						<div className="flex gap-6">
+						<div className="flex gap-6 darl:text-gray-300">
 							<ImFacebook2 className="text-2xl" />
 							<ImInstagram className="text-2xl" />
 							<ImTelegram className="text-2xl" />
 							<ImLinkedin className="text-2xl" />
 						</div>
-						<p className="w-full p-4 text-center">Andijon, Uzbekistan</p>
-						<p className="px-4 text-center">998 90 269 99 77</p>
+						<p className="w-full px-4 pt-4  text-center dark:text-gray-300">
+							Andijon, Uzbekistan
+						</p>
+						<p className="px-4 text-center dark:text-gray-300">
+							998 90 269 99 77
+						</p>
 					</div>
 				</div>
 			</div>
