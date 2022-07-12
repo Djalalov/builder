@@ -4,7 +4,7 @@
 
 @layer base {
 	body {
-		@apply bg-gray-50 text-gray-900 dark:bg-[#17181D] dark:text-gray-100;
+		@apply bg-gray-100 text-gray-900 dark:bg-[#17181D] dark:text-gray-100;
 		@apply min-h-screen;
 	}
 }
@@ -16,7 +16,3 @@ a {
 * {
 	box-sizing: border-box;
 }
-/* primary - #E09145 */
-/* secondary -  #FCD9B8 */
-/* bgMain - #17181D */
-/* bgSecondary - #292C35 */

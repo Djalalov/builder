@@ -12,8 +12,8 @@ module.exports = {
 				mytheme: {
 					primary: "#E09145",
 					secondary: "#FCD9B8",
-					bgMain: "#17181D",
-					bgSecondary: "#292C35",
+					main: "#17181D",
+					bgSecondary: "#2c2b2b",
 				},
 			},
 		],

@@ -15,7 +15,7 @@ import { MdOutlineSms } from "react-icons/md";
 
 const Header = () => {
 	return (
-		<div className="drawer dark:bg-[#292C35] backdrop-blur-sm">
+		<div className="drawer dark:bg-bgMain backdrop-blur-sm">
 			<input id="my-drawer-3" type="checkbox" className="drawer-toggle " />
 			<div className="drawer-content flex flex-col backdrop-blur-sm">
 				{/*Navbar*/}

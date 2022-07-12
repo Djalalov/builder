@@ -11,6 +11,10 @@ import project2 from "../public/project2.jpg";
 import project3 from "../public/project3.jpg";
 import project4 from "../public/project4.jpg";
 import project5 from "../public/project5.jpg";
+import { IoEyeOutline } from "react-icons/io5";
+import { ImInfo } from "react-icons/im";
+import Card from "./Card";
+import { stat } from "fs";
 
 const Hero = () => {
 	SwiperCore.use([Autoplay]);
@@ -95,7 +99,7 @@ const Hero = () => {
 				<h1 className="text-4xl font-bold pt-4 px-4">
 					Loremum ip lor sitwe amet elit
 				</h1>
-				<p className="font-bold py-4 px-4 text-gray-400">
+				<p className="font-semibold py-4 px-4 text-gray-400">
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam
 					cuebitis ad velit nostrum tempore? Dignissimos earum delectus atque.
 				</p>
@@ -103,6 +107,28 @@ const Hero = () => {
 			<button className="btn btn-active btn-sm mx-4 btn-primary dark:bg-primary text-white">
 				Batafsil
 			</button>
+
+			{/*=============== Statistics ==============*/}
+			<div className="flex flex-col mt-6">
+				<Card
+					stat={30}
+					description={"Dizaynerlik va qurilish loyihalar bajarildi"}
+					icon1={<IoEyeOutline className="text-2xl text-gray-400" />}
+					icon2={<ImInfo className="text-xl" />}
+				/>
+				<Card
+					stat={45}
+					description={"Mahalliy hamda xalqaro mijozlar"}
+					icon1={<IoEyeOutline className="text-2xl text-gray-400" />}
+					icon2={<ImInfo className="text-xl" />}
+				/>
+				<Card
+					stat={10}
+					description={"Yillik professional tajriba"}
+					icon1={<IoEyeOutline className="text-2xl text-gray-400" />}
+					icon2={<ImInfo className="text-xl" />}
+				/>
+			</div>
 		</section>
 	);
 };
