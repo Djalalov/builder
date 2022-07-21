@@ -41,6 +41,7 @@ const Hero = () => {
 							width="100%"
 							height={120}
 							objectFit="cover"
+							priority
 						/>
 					</SwiperSlide>
 					<SwiperSlide>
@@ -51,6 +52,7 @@ const Hero = () => {
 							width="100%"
 							height={120}
 							objectFit="cover"
+							priority
 						/>
 					</SwiperSlide>
 					<SwiperSlide>
@@ -61,6 +63,7 @@ const Hero = () => {
 							height={120}
 							layout="responsive"
 							objectFit="cover"
+							priority
 						/>
 					</SwiperSlide>
 					<SwiperSlide>
@@ -71,6 +74,7 @@ const Hero = () => {
 							height={120}
 							layout="responsive"
 							objectFit="cover"
+							priority
 						/>
 					</SwiperSlide>
 					<SwiperSlide>
@@ -81,6 +85,7 @@ const Hero = () => {
 							height={120}
 							layout="responsive"
 							objectFit="cover"
+							priority
 						/>
 					</SwiperSlide>
 					<SwiperSlide>
@@ -91,43 +96,45 @@ const Hero = () => {
 							height={120}
 							layout="responsive"
 							objectFit="cover"
+							priority
 						/>
 					</SwiperSlide>
 				</Swiper>
-			</div>
-			<div className="">
-				<h1 className="text-4xl font-bold pt-4 px-4">
-					Loremum ip lor sitwe amet elit
-				</h1>
-				<p className="font-semibold py-4 px-4 text-gray-400">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam
-					cuebitis ad velit nostrum tempore? Dignissimos earum delectus atque.
-				</p>
-			</div>
-			<button className="btn btn-active btn-sm mx-4 btn-primary dark:bg-primary text-white">
-				Batafsil
-			</button>
 
-			{/*=============== Statistics ==============*/}
-			<div className="flex flex-col mt-6">
-				<Card
-					stat={30}
-					description={"Dizaynerlik va qurilish loyihalar bajarildi"}
-					icon1={<IoEyeOutline className="text-2xl text-gray-400" />}
-					icon2={<ImInfo className="text-xl" />}
-				/>
-				<Card
-					stat={45}
-					description={"Mahalliy hamda xalqaro mijozlar"}
-					icon1={<IoEyeOutline className="text-2xl text-gray-400" />}
-					icon2={<ImInfo className="text-xl" />}
-				/>
-				<Card
-					stat={10}
-					description={"Yillik professional tajriba"}
-					icon1={<IoEyeOutline className="text-2xl text-gray-400" />}
-					icon2={<ImInfo className="text-xl" />}
-				/>
+				<div className="">
+					<h1 className="text-4xl font-bold pt-4 px-4 dark:text-zinc-300">
+						Loremum ip lor sitwe amet elit
+					</h1>
+					<p className="font-semibold py-4 px-4 text-gray-700 dark:text-zinc-400/80">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam
+						cuebitis ad velit nostrum tempore? Dignissimos earum delectus atque.
+					</p>
+				</div>
+				<button className="btn btn-active w-1/4 btn-sm mx-4 btn-primary dark:bg-primary text-white">
+					Batafsil
+				</button>
+
+				{/*=============== Statistics ==============*/}
+				<div className="flex flex-col mt-6">
+					<Card
+						stat={30}
+						description={"Dizaynerlik va qurilish loyihalar bajarildi"}
+						icon1={<IoEyeOutline className="text-2xl text-zinc-400" />}
+						icon2={<ImInfo className="text-xl" />}
+					/>
+					<Card
+						stat={45}
+						description={"Mahalliy hamda xalqaro mijozlar"}
+						icon1={<IoEyeOutline className="text-2xl text-zinc-400" />}
+						icon2={<ImInfo className="text-xl" />}
+					/>
+					<Card
+						stat={10}
+						description={"Yillik professional tajriba"}
+						icon1={<IoEyeOutline className="text-2xl text-zinc-400" />}
+						icon2={<ImInfo className="text-xl" />}
+					/>
+				</div>
 			</div>
 		</section>
 	);

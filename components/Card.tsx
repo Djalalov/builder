@@ -9,7 +9,7 @@ const Card = ({ stat, description, icon1, icon2 }) => {
 				</span>
 				<p className="pt-2 text-gray-400">{description} </p>
 			</div>
-			<div className="flex flex-col items-center">
+			<div className="flex flex-col items-center mt-2">
 				<button className="btn btn-ghost">{icon1}</button>
 				<button className="btn btn-ghost text-gray-400">{icon2}</button>
 			</div>

@@ -1,6 +1,6 @@
 import React from "react";
-import Hero from "./Hero";
-import SwapIcon from "./SwapIcon";
+import Hero from "../components/Hero";
+import SwapIcon from "../components/SwapIcon";
 import {
 	ImFacebook2,
 	ImInstagram,
@@ -15,11 +15,11 @@ import { MdOutlineSms } from "react-icons/md";
 
 const Header = () => {
 	return (
-		<div className="drawer dark:bg-bgMain backdrop-blur-sm">
+		<div className="drawer backdrop-blur-lg">
 			<input id="my-drawer-3" type="checkbox" className="drawer-toggle " />
 			<div className="drawer-content flex flex-col backdrop-blur-sm">
 				{/*Navbar*/}
-				<div className="w-full sticky top-0 xl:container xl:mx-auto navbar dark:bg-[#292C35] backdrop-blur-sm">
+				<div className="w-full sticky z-50 top-0 xl:container xl:mx-auto navbar dark:bg-[#292C35]/70 backdrop-blur-xl">
 					<div className="flex-none lg:hidden">
 						<label htmlFor="my-drawer-3" className="btn btn-square btn-ghost">
 							<svg
@@ -63,11 +63,11 @@ const Header = () => {
 			</div>
 			<div className="drawer-side">
 				<label htmlFor="my-drawer-3" className="drawer-overlay "></label>
-				<div className="menu p-4 overflow-y-auto w-60 bg-base-100/80 dark:bg-black/80 backdrop-blur-sm flex flex-col justify-between">
+				<div className="menu p-4 overflow-y-auto w-60 bg-base-100/80 dark:bg-[#17181D]/90 backdrop-blur-md flex flex-col justify-between">
 					<div className="pt-2">
 						<h1 className="text-center text-3xl mb-4">Builder</h1>
-						<hr className="bg-black" />
-						<ul className="space-y-8 pt-24">
+						<hr className="dark:bg-[#17181D]/90 bg-black" />
+						<ul className="space-y-6 pt-24">
 							<li className="flex flex-row">
 								<ImInfo className="w-14 h-14 font-bold" />
 								<a className="font-semibold">Biz haqimizda</a>
