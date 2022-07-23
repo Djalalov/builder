@@ -20,18 +20,20 @@ const navLinks = [
 	{ title: "Mijozlar", path: "/clients", icon: <IoPeopleOutline /> },
 	{ title: "Aloqa", path: "/contacts", icon: <MdOutlineSms /> },
 ];
-const NavItems = () => {
+const SideBar = ({ showNav }) => {
 	const router = useRouter();
 	return (
-		<div className="menu p-4 overflow-y-auto w-60 bg-base-100/80 dark:bg-[#17181D]/90 backdrop-blur-md flex flex-col justify-between h-full">
+		<div
+			className={` ${
+				showNav ? "left-0 " : "-left-full"
+			}  fixed bottom-0 top-0 items-center bg-gray-500 w-4/7 menu p-2 z-20 overflow-y-auto bg-base-100/80 dark:bg-[#17181D]/90 backdrop-blur-md flex flex-col justify-between transition-left ease-in-out duration-300 h-screen`}
+		>
 			<div className="pt-2">
-				<h1 className="text-center text-3xl mb-4">Builder</h1>
-				<hr className="dark:bg-[#17181D]/90 bg-black" />
-				<ul>
+				<ul className="space-y-6">
 					{navLinks.map(link => (
-						<li key={link.title}>
+						<li className="flex flex-row" key={link.title}>
+							<span className="w-14 h-14 font-bold">{link.icon}</span>
 							<Link href={link.path} passHref>
-								<span className="w-14 h-14 font-bold">{link.icon}</span>
 								<a
 									className={router.pathname === link.path ? "activeLink" : " "}
 								>
@@ -58,7 +60,7 @@ const NavItems = () => {
 	);
 };
 
-export default NavItems;
+export default SideBar;
 /* ////////////////////////////////////////////////////// */
 
 {

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { HiOutlineMenuAlt2, HiOutlineMenuAlt3 } from "react-icons/hi";
-import NavItems from "./NavItems";
+import SideBar from "./SideBar";
 
 const Navbar = () => {
 	const [showNav, setShowNav] = useState(false);
@@ -36,13 +36,7 @@ const Navbar = () => {
 				</label>
 			</div>
 
-			<div
-				className={` ${
-					showNav ? "left-0 " : "-left-full"
-				}  fixed bottom-0 top-12 items-center bg-gray-500 w-3/6  text-white space-y-5 p-2 transition-left ease-in-out h-96 duration-300`}
-			>
-				<NavItems />
-			</div>
+			<SideBar showNav={showNav} />
 		</nav>
 	);
 };
