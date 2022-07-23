@@ -4,7 +4,11 @@ module.exports = {
 		"./components/**/*.{js,ts,jsx,tsx}",
 	],
 	theme: {
-		extend: {},
+		extend: {
+			transitionProperty: {
+				left: "left",
+			},
+		},
 	},
 	daisyui: {
 		themes: [
@@ -18,6 +22,8 @@ module.exports = {
 			},
 		],
 	},
-	plugins: [require("daisyui", "@tailwindcss/typography")],
+	plugins: [
+		require("daisyui", "@tailwindcss/typography", "@tailwindcss/aspect-ratio"),
+	],
 	darkMode: "class",
 };

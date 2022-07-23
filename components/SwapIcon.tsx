@@ -25,7 +25,7 @@ const SwapIcon = () => {
 					/>
 				</div>
 			) : (
-				<div className=" swap-rotate">
+				<div className="swap-rotate">
 					<MoonIcon
 						className="swap-off w-8 h-8 text-gray-900 "
 						role="button"
