@@ -1,6 +1,7 @@
 import React from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
+
 import {
 	ImFacebook2,
 	ImInstagram,
@@ -20,13 +21,16 @@ const navLinks = [
 	{ title: "Mijozlar", path: "/clients", icon: <IoPeopleOutline /> },
 	{ title: "Aloqa", path: "/contacts", icon: <MdOutlineSms /> },
 ];
-const SideBar = ({ showNav }) => {
+
+const SideBar = ({ showNav, boxRef }) => {
 	const router = useRouter();
+
 	return (
 		<div
+			ref={boxRef}
 			className={` ${
 				showNav ? "left-0 " : "-left-full"
-			}  fixed bottom-0 top-0 items-center bg-gray-500 w-4/7 menu p-2 z-20 overflow-y-auto bg-base-100/80 dark:bg-[#17181D]/90 backdrop-blur-md flex flex-col justify-between transition-left ease-in-out duration-300 h-screen`}
+			}  fixed bottom-0 top-0 items-center bg-gray-500 w-4/7 menu p-2 z-20 overflow-y-auto bg-base-100/80 dark:bg-[#17181D]/70 backdrop-blur-md flex flex-col justify-between transition-left ease-in-out duration-300 h-screen`}
 		>
 			<div className="pt-2">
 				<ul className="space-y-6">

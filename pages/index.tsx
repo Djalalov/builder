@@ -16,8 +16,9 @@ const Home: NextPage = () => {
 			</Head>
 			<main className="relative">
 				<Navbar />
-				{/* 		<Projects />
-				<Footer /> */}
+				<Hero />
+				<Projects />
+				<Footer />
 			</main>
 		</>
 	);

@@ -62,9 +62,7 @@ const Header = () => {
 				<Hero />
 			</div>
 
-			<div className="drawer-side ">
-				<label htmlFor="my-drawer-3" className="drawer-overlay "></label>
-			</div>
+			<div className="drawer-side "></div>
 		</div>
 	);
 };

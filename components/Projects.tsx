@@ -1,6 +1,7 @@
 import React from "react";
+import type { NextPage } from "next";
 
-const Projects = () => {
+const Projects: NextPage = () => {
 	return (
 		<div className="z-10 relative">
 			<p className="title">Loyihalar</p>

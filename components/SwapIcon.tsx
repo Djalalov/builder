@@ -13,13 +13,14 @@ const SwapIcon = () => {
 	const currentTheme = theme === "system" ? systemTheme : theme;
 
 	if (!mounted) return null;
+	console.log(systemTheme);
 
 	return (
 		<>
 			{currentTheme === "dark" ? (
 				<div className="swap-rotate">
 					<SunIcon
-						className="swap-on w-8 h-8 text-primary "
+						className="swap-on w-7 h-7 text-primary "
 						role="button"
 						onClick={() => setTheme("light")}
 					/>
@@ -27,7 +28,7 @@ const SwapIcon = () => {
 			) : (
 				<div className="swap-rotate">
 					<MoonIcon
-						className="swap-off w-8 h-8 text-gray-900 "
+						className="swap-off w-7 h-7 text-gray-900 "
 						role="button"
 						onClick={() => setTheme("dark")}
 					/>
