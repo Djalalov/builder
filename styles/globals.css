@@ -21,7 +21,7 @@
 	}
 
 	.buttonStyle {
-		@apply bg-[#0d84d3] text-white rounded-full font-bold shadow-md hover:bg-sky-700 disabled:hover:bg-sky-600 disabled:opacity-50 disabled:cursor-default;
+		@apply btn btn-active w-1/4 btn-sm mx-4 btn-primary dark:bg-primary text-white;
 	}
 
 	.tag {

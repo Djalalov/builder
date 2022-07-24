@@ -109,9 +109,7 @@ const Hero = () => {
 					cuebitis ad velit nostrum tempore? Dignissimos earum delectus atque.
 				</p>
 			</div>
-			<button className="btn btn-active w-1/4 btn-sm mx-4 btn-primary dark:bg-primary text-white">
-				Batafsil
-			</button>
+			<button className="buttonStyle">Batafsil</button>
 
 			{/*=============== Statistics ==============*/}
 			<div className="flex flex-col mt-6">
