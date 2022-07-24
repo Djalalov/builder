@@ -17,9 +17,9 @@ const SwapIcon = () => {
 	return (
 		<>
 			{currentTheme === "dark" ? (
-				<div className="swap-rotate">
+				<div className="swap-rotate ">
 					<SunIcon
-						className="swap-on w-7 h-7 text-primary "
+						className="swap-on w-7 h-7 text-primary"
 						role="button"
 						onClick={() => setTheme("light")}
 					/>

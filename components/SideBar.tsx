@@ -52,7 +52,7 @@ const SideBar = ({ showNav, boxRef }) => {
 				showNav ? "left-0 " : "-left-full"
 			}  fixed bottom-0 top-0 items-center w-1/2 menu z-20 overflow-y-auto bg-base-100/90 dark:bg-[#17181D]/95 backdrop flex flex-col justify-between transition-left ease-in-out duration-300 h-screen`}
 		>
-			<div className="font-semibold text-4xl bg-primary/80 w-full h-20 border-b-2">
+			<div className="font-semibold text-4xl bg-primary/80 w-full h-20">
 				<h1 className="text-center pt-4">Builder</h1>
 			</div>
 
@@ -75,7 +75,7 @@ const SideBar = ({ showNav, boxRef }) => {
 				</ul>
 			</div>
 
-			<div className="flex-col pt-6 border-t-2 bg-base-100/80 w-full h-32">
+			<div className="flex-col pt-6 border-t-2 dark:border-gray-300 bg-base-100/80 dark:bg-inherit w-full h-32">
 				<div className="flex items-center justify-center gap-4 darl:text-gray-300">
 					<ImFacebook2 className="text-2xl" />
 					<ImInstagram className="text-2xl" />

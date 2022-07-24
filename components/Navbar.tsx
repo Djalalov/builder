@@ -10,14 +10,14 @@ const Navbar = () => {
 	const boxOutsideClick = OutsideClick(boxRef);
 	const [showNav, setShowNav] = useState(false);
 	return (
-		<nav className="md:flex justify-between items-center dark:bg-[#17181D]/90 backdrop-blur-sm sticky top-0 z-20 h-12">
+		<nav className="md:flex justify-between items-center dark:bg-[#17181D]/90 backdrop-blur-sm sticky top-0 z-20 h-14">
 			<div className="flex items-center justify-between p-2">
 				<Link href="/">
 					<a className="text-center text-2xl font-bold">Builder</a>
 				</Link>
-				<div className="flex items-center justify-center gap-4">
+				<div className="flex items-center justify-center gap-2">
 					<SwapIcon />
-					<label className="swap swap-rotate border-none">
+					<label className="swap swap-rotate border-none p-2">
 						<input type="checkbox" onChange={() => setShowNav(!showNav)} />
 						<svg
 							className="swap-off fill-current"
@@ -44,7 +44,7 @@ const Navbar = () => {
 				/* onClick={() => setShowNav(!showNav)} */
 				className={`${
 					showNav
-						? "bg-black/30 fixed w-full h-[100vh] top-12 left-0 right-0 bottom-0 cursor-pointer"
+						? "bg-black/30 fixed w-full h-[100vh] top-14 left-0 right-0 bottom-0 cursor-pointer"
 						: ""
 				}`}
 			>
