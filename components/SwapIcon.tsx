@@ -13,7 +13,6 @@ const SwapIcon = () => {
 	const currentTheme = theme === "system" ? systemTheme : theme;
 
 	if (!mounted) return null;
-	console.log(systemTheme);
 
 	return (
 		<>

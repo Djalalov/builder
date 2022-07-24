@@ -15,11 +15,31 @@ import { IoPeopleOutline } from "react-icons/io5";
 import { MdOutlineSms } from "react-icons/md";
 
 const navLinks = [
-	{ title: "Biz haqimizda", path: "/", icon: <ImInfo /> },
-	{ title: "Loyihalar", path: "/projects", icon: <BiBuildings /> },
-	{ title: "Xizmatlar", path: "/services", icon: <ImClipboard /> },
-	{ title: "Mijozlar", path: "/clients", icon: <IoPeopleOutline /> },
-	{ title: "Aloqa", path: "/contacts", icon: <MdOutlineSms /> },
+	{
+		title: "Biz haqimizda",
+		path: "/",
+		icon: <ImInfo className="w-8 h-8 pl-2" />,
+	},
+	{
+		title: "Loyihalar",
+		path: "/projects",
+		icon: <BiBuildings className="w-8 h-8 pl-2" />,
+	},
+	{
+		title: "Xizmatlar",
+		path: "/services",
+		icon: <ImClipboard className="w-8 h-8 pl-2" />,
+	},
+	{
+		title: "Mijozlar",
+		path: "/clients",
+		icon: <IoPeopleOutline className="w-8 h-8 pl-2" />,
+	},
+	{
+		title: "Aloqa",
+		path: "/contacts",
+		icon: <MdOutlineSms className="w-8 h-8 pl-2" />,
+	},
 ];
 
 const SideBar = ({ showNav, boxRef }) => {
@@ -30,16 +50,22 @@ const SideBar = ({ showNav, boxRef }) => {
 			ref={boxRef}
 			className={` ${
 				showNav ? "left-0 " : "-left-full"
-			}  fixed bottom-0 top-0 items-center bg-gray-500 w-4/7 menu p-2 z-20 overflow-y-auto bg-base-100/80 dark:bg-[#17181D]/70 backdrop-blur-md flex flex-col justify-between transition-left ease-in-out duration-300 h-screen`}
+			}  fixed bottom-0 top-0 items-center w-1/2 menu z-20 overflow-y-auto bg-base-100/90 dark:bg-[#17181D]/95 backdrop flex flex-col justify-between transition-left ease-in-out duration-300 h-screen`}
 		>
-			<div className="pt-2">
+			<div className="font-semibold text-4xl bg-primary/80 w-full h-20 border-b-2">
+				<h1 className="text-center pt-4">Builder</h1>
+			</div>
+
+			<div className="flex flex-col items-center justify-center ">
 				<ul className="space-y-6">
 					{navLinks.map(link => (
-						<li className="flex flex-row" key={link.title}>
-							<span className="w-14 h-14 font-bold">{link.icon}</span>
+						<li className="flex flex-row font-semibold" key={link.title}>
+							<span className="p-0 font-bold ">{link.icon}</span>
 							<Link href={link.path} passHref>
 								<a
-									className={router.pathname === link.path ? "activeLink" : " "}
+									className={
+										router.pathname === link.path ? "activeLink pr-4" : " "
+									}
 								>
 									{link.title}
 								</a>
@@ -48,8 +74,9 @@ const SideBar = ({ showNav, boxRef }) => {
 					))}
 				</ul>
 			</div>
-			<div className="pb-2 px-4 flex-col">
-				<div className="flex gap-6 darl:text-gray-300">
+
+			<div className="flex-col pt-6 border-t-2 bg-base-100/80 w-full h-32">
+				<div className="flex items-center justify-center gap-4 darl:text-gray-300">
 					<ImFacebook2 className="text-2xl" />
 					<ImInstagram className="text-2xl" />
 					<ImTelegram className="text-2xl" />

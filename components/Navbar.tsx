@@ -10,10 +10,10 @@ const Navbar = () => {
 	const boxOutsideClick = OutsideClick(boxRef);
 	const [showNav, setShowNav] = useState(false);
 	return (
-		<nav className="md:flex justify-between items-center dark:bg-[#292C35]/90 backdrop-blur-md sticky top-0 z-20 h-12">
+		<nav className="md:flex justify-between items-center dark:bg-[#17181D]/90 backdrop-blur-sm sticky top-0 z-20 h-12">
 			<div className="flex items-center justify-between p-2">
 				<Link href="/">
-					<a className="text-center text-2xl">Builder</a>
+					<a className="text-center text-2xl font-bold">Builder</a>
 				</Link>
 				<div className="flex items-center justify-center gap-4">
 					<SwapIcon />
