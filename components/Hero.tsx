@@ -11,10 +11,8 @@ import project2 from "../public/project2.jpg";
 import project3 from "../public/project3.jpg";
 import project4 from "../public/project4.jpg";
 import project5 from "../public/project5.jpg";
-import { IoEyeOutline } from "react-icons/io5";
-import { ImInfo } from "react-icons/im";
+
 import Card from "./Card";
-import { stat } from "fs";
 
 const Hero = () => {
 	SwiperCore.use([Autoplay]);
@@ -116,21 +114,9 @@ const Hero = () => {
 				<Card
 					stat={30}
 					description={"Dizaynerlik va qurilish loyihalar bajarildi"}
-					icon1={<IoEyeOutline className="text-2xl text-zinc-400" />}
-					icon2={<ImInfo className="text-xl" />}
 				/>
-				<Card
-					stat={45}
-					description={"Mahalliy hamda xalqaro mijozlar"}
-					icon1={<IoEyeOutline className="text-2xl text-zinc-400" />}
-					icon2={<ImInfo className="text-xl" />}
-				/>
-				<Card
-					stat={10}
-					description={"Yillik professional tajriba"}
-					icon1={<IoEyeOutline className="text-2xl text-zinc-400" />}
-					icon2={<ImInfo className="text-xl" />}
-				/>
+				<Card stat={45} description={"Mahalliy hamda xalqaro mijozlar"} />
+				<Card stat={10} description={"Yillik professional tajriba"} />
 			</div>
 		</div>
 	);

@@ -1,7 +1,6 @@
 import React from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
-import { useEffect, useRef } from "react";
 
 import {
 	ImFacebook2,
@@ -43,32 +42,14 @@ const navLinks = [
 	},
 ];
 
-const SideBar = ({ showNav, setShowNav }) => {
+const SideBar = ({ showNav }) => {
 	const router = useRouter();
-	const ref = useRef();
-
-	/* console.log(checkBoxRef.current.checked);
-
-	useEffect(() => {
-		const checkIfClickedOutside = () => {
-			if (showNav && ref.current) {
-				setShowNav(false);
-				ref.current.checked = false;
-			}
-		};
-		document.addEventListener("mousedown", checkIfClickedOutside);
-
-		return () => {
-			document.removeEventListener("mousedown", checkIfClickedOutside);
-		};
-	}, [showNav, setShowNav]); */
 
 	return (
 		<div
-			//ref={ref}
 			className={` ${
 				showNav ? "left-0 " : "-left-full"
-			}  fixed bottom-0 top-0 items-center w-1/2 menu z-20 overflow-y-auto bg-base-100/90 dark:bg-[#17181D]/95 backdrop flex flex-col justify-between transition-left ease-in-out duration-300 h-screen`}
+			}  fixed bottom-0 top-0 items-center w-52 menu z-20 overflow-y-auto bg-base-100/90 dark:bg-[#17181D]/95 backdrop flex flex-col justify-between transition-left ease-in-out duration-300 h-screen`}
 		>
 			<div className="font-semibold text-4xl bg-primary/80 w-full h-20">
 				<h1 className="text-center pt-4">Builder</h1>
