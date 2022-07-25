@@ -27,7 +27,7 @@ const SwapIcon = () => {
 			) : (
 				<div className="swap-rotate">
 					<MoonIcon
-						className="swap-off w-7 h-7 text-gray-900 "
+						className="swap-off w-7 h-7 text-base-100"
 						role="button"
 						onClick={() => setTheme("dark")}
 					/>

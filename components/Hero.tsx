@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -12,7 +12,7 @@ import project3 from "../public/project3.jpg";
 import project4 from "../public/project4.jpg";
 import project5 from "../public/project5.jpg";
 
-import Card from "./Card";
+import Cards from "./Cards";
 
 const Hero = () => {
 	SwiperCore.use([Autoplay]);
@@ -111,12 +111,7 @@ const Hero = () => {
 
 			{/*=============== Statistics ==============*/}
 			<div className="flex flex-col mt-6">
-				<Card
-					stat={30}
-					description={"Dizaynerlik va qurilish loyihalar bajarildi"}
-				/>
-				<Card stat={45} description={"Mahalliy hamda xalqaro mijozlar"} />
-				<Card stat={10} description={"Yillik professional tajriba"} />
+				<Cards />
 			</div>
 		</div>
 	);

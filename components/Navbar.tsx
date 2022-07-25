@@ -12,14 +12,16 @@ const Navbar = () => {
 	}
 
 	return (
-		<nav className="md:flex justify-between items-center dark:bg-[#17181D]/90 backdrop-blur-sm sticky top-0 z-50 h-14">
+		<nav className="md:flex justify-between items-center bg-[#17181D]/90 dark:bg-[#17181D]/90 backdrop-blur-sm sticky top-0 z-50 h-14">
 			<div className="flex items-center justify-between p-2">
 				<Link href="/">
-					<a className="text-center text-2xl font-bold px-2">Builder</a>
+					<a className="text-center text-2xl font-bold px-2 text-base-100">
+						Builder
+					</a>
 				</Link>
 				<div className="flex items-center justify-center gap-2">
 					<SwapIcon />
-					<label className="swap swap-rotate border-none p-2">
+					<label className="swap swap-rotate border-none p-2 text-base-100">
 						<input
 							type="checkbox"
 							id="checkBox"
