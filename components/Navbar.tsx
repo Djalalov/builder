@@ -1,24 +1,32 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import Link from "next/link";
 import SideBar from "./SideBar";
-import { useRef } from "react";
-import OutsideClick from "../utils/OutsideClick";
 import SwapIcon from "./SwapIcon";
 
 const Navbar = () => {
-	const boxRef = useRef(null);
-	const boxOutsideClick = OutsideClick(boxRef);
 	const [showNav, setShowNav] = useState(false);
+	const checkBoxRef = useRef();
+
+	function getCheckBox() {
+		const cb = document.getElementById("checkBox") as HTMLInputElement | null;
+		cb.checked = false;
+	}
+
 	return (
 		<nav className="md:flex justify-between items-center dark:bg-[#17181D]/90 backdrop-blur-sm sticky top-0 z-20 h-14">
 			<div className="flex items-center justify-between p-2">
 				<Link href="/">
-					<a className="text-center text-2xl font-bold">Builder</a>
+					<a className="text-center text-2xl font-bold px-2">Builder</a>
 				</Link>
 				<div className="flex items-center justify-center gap-2">
 					<SwapIcon />
 					<label className="swap swap-rotate border-none p-2">
-						<input type="checkbox" onChange={() => setShowNav(!showNav)} />
+						<input
+							ref={checkBoxRef}
+							type="checkbox"
+							id="checkBox"
+							onChange={() => setShowNav(!showNav)}
+						/>
 						<svg
 							className="swap-off fill-current"
 							xmlns="http://www.w3.org/2000/svg"
@@ -41,14 +49,22 @@ const Navbar = () => {
 				</div>
 			</div>
 			<div
-				/* onClick={() => setShowNav(!showNav)} */
+				onClick={() => {
+					setShowNav(!showNav);
+					getCheckBox();
+					//checkBoxRef.current.checked = false;
+				}}
 				className={`${
 					showNav
 						? "bg-black/30 fixed w-full h-[100vh] top-14 left-0 right-0 bottom-0 cursor-pointer"
 						: ""
 				}`}
 			>
-				<SideBar showNav={showNav} boxRef={boxRef} />
+				<SideBar
+					showNav={showNav}
+					setShowNav={setShowNav}
+					//checkBoxRef={checkBoxRef}
+				/>
 			</div>
 		</nav>
 	);

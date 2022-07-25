@@ -1,6 +1,7 @@
 import React from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
+import { useEffect, useRef } from "react";
 
 import {
 	ImFacebook2,
@@ -42,12 +43,29 @@ const navLinks = [
 	},
 ];
 
-const SideBar = ({ showNav, boxRef }) => {
+const SideBar = ({ showNav, setShowNav }) => {
 	const router = useRouter();
+	const ref = useRef();
+
+	/* console.log(checkBoxRef.current.checked);
+
+	useEffect(() => {
+		const checkIfClickedOutside = () => {
+			if (showNav && ref.current) {
+				setShowNav(false);
+				ref.current.checked = false;
+			}
+		};
+		document.addEventListener("mousedown", checkIfClickedOutside);
+
+		return () => {
+			document.removeEventListener("mousedown", checkIfClickedOutside);
+		};
+	}, [showNav, setShowNav]); */
 
 	return (
 		<div
-			ref={boxRef}
+			//ref={ref}
 			className={` ${
 				showNav ? "left-0 " : "-left-full"
 			}  fixed bottom-0 top-0 items-center w-1/2 menu z-20 overflow-y-auto bg-base-100/90 dark:bg-[#17181D]/95 backdrop flex flex-col justify-between transition-left ease-in-out duration-300 h-screen`}
@@ -92,29 +110,3 @@ const SideBar = ({ showNav, boxRef }) => {
 };
 
 export default SideBar;
-/* ////////////////////////////////////////////////////// */
-
-{
-	/* <ul className="space-y-6 pt-24">
-	<li className="flex flex-row">
-		<ImInfo className="w-14 h-14 font-bold" />
-		<a className="font-semibold">Biz haqimizda</a>
-	</li>
-	<li className="flex flex-row">
-		<ImClipboard className="w-14 h-14 font-bold" />
-		<a className="font-semibold">Xizmatlar</a>
-	</li>
-	<li className="flex flex-row">
-		<BiBuildings className="w-14 h-14 " />
-		<a className="font-semibold">Loyihalar</a>
-	</li>
-	<li className="flex flex-row">
-		<IoPeopleOutline className="w-14 h-14" />
-		<a className="font-semibold">Mijozlar</a>
-	</li>
-	<li className="flex flex-row">
-		<MdOutlineSms className="w-14 h-14" />
-		<a className="font-semibold">Aloqa</a>
-	</li>
-</ul>; */
-}
