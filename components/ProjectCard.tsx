@@ -2,7 +2,8 @@ import React from "react";
 import Image from "next/image";
 import { ImLocation2, ImClock } from "react-icons/im";
 import { FaRulerCombined } from "react-icons/fa";
-import { BsBuilding } from "react-icons/bs";
+import { BsBuilding, BsBoxArrowInRight } from "react-icons/bs";
+import Button from "./Button";
 
 const ProjectCard = ({ image }) => {
 	return (
@@ -16,7 +17,7 @@ const ProjectCard = ({ image }) => {
 						<BsBuilding className="text-primary w-6 h-6" />
 						&quot;Sultan Ahmet&quot; restaran
 					</h2>
-					<div className="flex items-center justify-between my-4">
+					<div className="flex items-center justify-between my-2">
 						<div className="flex">
 							<ImLocation2 className="w-5 h-5" />
 							<p className="mx-2 text-base text-gray-400">Andijon</p>
@@ -30,10 +31,9 @@ const ProjectCard = ({ image }) => {
 							<p className="mx-2 text-base text-gray-400">3 oy</p>
 						</div>
 					</div>
-
-					<div className="card-actions justify-end">
-						<button className="buttonStyle2">Batafsil</button>
-					</div>
+				</div>
+				<div className="card-actions">
+					<Button title="Batafsil" />
 				</div>
 			</div>
 		</>

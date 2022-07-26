@@ -20,11 +20,11 @@
 		@apply bg-[#028ce8] bg-opacity-20;
 	}
 
-	.buttonStyle1 {
-		@apply btn btn-active w-1/4 btn-sm mx-4 btn-primary dark:bg-primary text-white;
+	.btnPrimary {
+		@apply btn mx-4 btn-primary dark:bg-primary text-white rounded-xl hover:bg-transparent;
 	}
-	.buttonStyle2 {
-		@apply btn btn-sm btn-active btn-outline btn-warning w-1/4 mx-4 text-white;
+	.btnSecondary {
+		@apply w-full h-10 hover:bg-primary-focus hover:border-none rounded-t-none bg-primary text-white rounded-b-lg font-medium;
 	}
 
 	.tag {
@@ -34,6 +34,7 @@
 		@apply font-semibold pt-8 pb-2 px-4 text-primary dark:text-primary;
 	}
 }
+
 a {
 	color: inherit;
 	text-decoration: none;
