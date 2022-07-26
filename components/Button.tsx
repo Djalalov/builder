@@ -10,7 +10,7 @@ const Button = ({ title }) => {
 			<button
 				ref={ripple}
 				onMouseDown={event}
-				className="btnSecondary flex items-center justify-center"
+				className="btnSecondary flex items-center justify-center dark:text-[#17181D]"
 			>
 				{title}
 				<BsBoxArrowInRight className="ml-2 w-6 h-6" />

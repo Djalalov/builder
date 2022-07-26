@@ -8,11 +8,11 @@ import Button from "./Button";
 const ProjectCard = ({ image, title, location, metrics, duration }) => {
 	return (
 		<>
-			<div className="card card-compact flex rounded-xl h-18 m-4 mb-8 bg-[#292C35] dark:bg-secondary/5 shadow-xl text-white">
+			<div className="card card-compact flex rounded-xl h-18 m-4 mb-8 bg-[#292C35] dark:bg-[#292C35]/40 ">
 				<figure>
 					<Image src={image} alt="Project 1" width={400} height={350} />{" "}
 				</figure>
-				<div className="card-body  ">
+				<div className="card-body shadow-glass text-base-100 dark:bg-gradient-to-tr from-[#17181D]/50 to-[#292C35]">
 					<h2 className="card-title ">
 						<BsBuilding className="text-primary w-6 h-6" />
 						{title}
