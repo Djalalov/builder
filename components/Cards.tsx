@@ -40,7 +40,7 @@ const Accordian = ({ title, info, stat }) => {
 				onClick={() => handleOpen()}
 				className={`${
 					open ? "rounded-t-xl my-0" : "rounded-xl my-2"
-				} flex group cursor-pointer h-18 px-2 py-2 mx-4 my-2 bg-[#292C35] dark:bg-secondary/5`}
+				} flex group cursor-pointer h-18 px-2 py-2 mx-4 bg-[#292C35] dark:bg-secondary/5`}
 			>
 				<div className="flex-1 mr-2 space-y-2 p-2">
 					<span className="font-bold text-4xl text-white">

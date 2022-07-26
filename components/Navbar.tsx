@@ -2,6 +2,12 @@ import React, { useState } from "react";
 import Link from "next/link";
 import SideBar from "./SideBar";
 import SwapIcon from "./SwapIcon";
+import {
+	ImFacebook2,
+	ImInstagram,
+	ImTelegram,
+	ImLinkedin,
+} from "react-icons/im";
 
 const Navbar = () => {
 	const [showNav, setShowNav] = useState(false);
@@ -47,6 +53,13 @@ const Navbar = () => {
 						</svg>
 					</label>
 				</div>
+			</div>
+			<div className="navbar-end px-2 flex gap-6">
+				<SwapIcon /> <span className="hidden">|</span>
+				<ImFacebook2 className="hidden text-3xl" />
+				<ImInstagram className="hidden text-3xl" />
+				<ImTelegram className=" hidden text-3xl" />
+				<ImLinkedin className="hidden text-3xl" />
 			</div>
 			<div
 				onClick={() => {
