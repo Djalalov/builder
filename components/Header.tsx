@@ -38,19 +38,6 @@ const Header = () => {
 						</label>
 					</div>
 					<div className="flex navbar-start mx-2 text-2xl">Builder</div>
-					<div className="flex-none navbar-center hidden lg:block ">
-						<ul className="menu menu-horizontal">
-							<li>
-								<a>Navbar Item 1</a>
-							</li>
-							<li>
-								<a>Navbar Item 2</a>
-							</li>
-							<li>
-								<a>Navbar Item 2</a>
-							</li>
-						</ul>
-					</div>
 				</div>
 				<Hero />
 			</div>

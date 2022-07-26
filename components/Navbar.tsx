@@ -25,9 +25,9 @@ const Navbar = () => {
 						Builder
 					</a>
 				</Link>
-				<div className="flex items-center justify-center gap-2">
+				<div className="flex items-center justify-center gap-2 ">
 					<SwapIcon />
-					<label className="swap swap-rotate border-none p-2 text-base-100">
+					<label className="swap swap-rotate border-none p-2 text-base-100 md:hidden">
 						<input
 							type="checkbox"
 							id="checkBox"
@@ -54,12 +54,24 @@ const Navbar = () => {
 					</label>
 				</div>
 			</div>
+			<div className="flex-none navbar-center hidden lg:block ">
+				<ul className="menu menu-horizontal">
+					<li>
+						<a>Navbar Item 1</a>
+					</li>
+					<li>
+						<a>Navbar Item 2</a>
+					</li>
+					<li>
+						<a>Navbar Item 2</a>
+					</li>
+				</ul>
+			</div>
 			<div className="navbar-end px-2 flex gap-6">
-				<SwapIcon /> <span className="hidden">|</span>
-				<ImFacebook2 className="hidden text-3xl" />
-				<ImInstagram className="hidden text-3xl" />
-				<ImTelegram className=" hidden text-3xl" />
-				<ImLinkedin className="hidden text-3xl" />
+				<ImFacebook2 className="hidden md:flex text-2xl text-base-100 dark:text-primary" />
+				<ImInstagram className="hidden md:flex text-2xl text-base-100 dark:text-primary" />
+				<ImTelegram className=" hidden md:flex text-2xl text-base-100 dark:text-primary" />
+				<ImLinkedin className="hidden md:flex text-2xl text-base-100 dark:text-primary" />
 			</div>
 			<div
 				onClick={() => {

@@ -20,8 +20,11 @@
 		@apply bg-[#028ce8] bg-opacity-20;
 	}
 
-	.buttonStyle {
+	.buttonStyle1 {
 		@apply btn btn-active w-1/4 btn-sm mx-4 btn-primary dark:bg-primary text-white;
+	}
+	.buttonStyle2 {
+		@apply btn btn-sm btn-active btn-outline btn-warning w-1/4 mx-4 text-white;
 	}
 
 	.tag {

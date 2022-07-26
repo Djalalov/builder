@@ -54,9 +54,9 @@ const Accordian = ({ title, info, stat }) => {
 					</button>
 					<button className="btn btn-ghost text-gray-400">
 						{open ? (
-							<ImCircleDown className="text-xl w-6 h-6" />
-						) : (
 							<ImCircleUp className="text-xl w-6 h-6" />
+						) : (
+							<ImCircleDown className="text-xl w-6 h-6" />
 						)}
 					</button>
 				</div>
