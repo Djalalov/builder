@@ -20,11 +20,9 @@ const Projects: NextPage = () => {
 			<Image
 				src={BG}
 				alt="Picture of the author"
-				width={500}
-				height={1000}
 				quality="100"
 				layout="fill"
-				className="absolute -z-10 translate-y-72"
+				className="absolute -z-10 translate-y-64"
 			/>
 			<div className="z-20">
 				<ProjectCard

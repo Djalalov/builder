@@ -12,7 +12,7 @@ const ProjectCard = ({ image, title, location, metrics, duration }) => {
 				<figure>
 					<Image src={image} alt="Project 1" width={400} height={350} />{" "}
 				</figure>
-				<div className="card-body shadow-glass text-base-100 dark:bg-gradient-to-tr from-[#17181D]/50 to-[#292C35]">
+				<div className="card-body shadow-glass bg-gradient-to-bl from-gray-300 to-white dark:text-base-100 dark:bg-gradient-to-tr dark:from-transparent dark:to-[#17181D]">
 					<h2 className="card-title ">
 						<BsBuilding className="text-primary w-6 h-6" />
 						{title}
@@ -20,15 +20,15 @@ const ProjectCard = ({ image, title, location, metrics, duration }) => {
 					<div className="flex items-center justify-between my-2">
 						<div className="flex">
 							<ImLocation2 className="w-5 h-5" />
-							<p className="mx-2 text-base text-gray-400">{location}</p>
+							<p className="mx-2 text-base dark:text-gray-400">{location}</p>
 						</div>
 						<div className="flex">
 							<FaRulerCombined className="w-5 h-5" />
-							<p className="mx-2 text-base text-gray-400">{metrics}</p>
+							<p className="mx-2 text-base dark:text-gray-400">{metrics}</p>
 						</div>
 						<div className="flex">
 							<ImClock className="w-5 h-5" />
-							<p className="mx-2 text-base text-gray-400">{duration}</p>
+							<p className="mx-2 text-base dark:text-gray-400">{duration}</p>
 						</div>
 					</div>
 				</div>
