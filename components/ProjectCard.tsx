@@ -5,7 +5,7 @@ import { FaRulerCombined } from "react-icons/fa";
 import { BsBuilding, BsBoxArrowInRight } from "react-icons/bs";
 import Button from "./Button";
 
-const ProjectCard = ({ image }) => {
+const ProjectCard = ({ image, title, location, metrics, duration }) => {
 	return (
 		<>
 			<div className="card card-compact flex rounded-xl h-18 m-4 mb-8 bg-[#292C35] dark:bg-secondary/5 shadow-xl text-white">
@@ -15,20 +15,20 @@ const ProjectCard = ({ image }) => {
 				<div className="card-body  ">
 					<h2 className="card-title ">
 						<BsBuilding className="text-primary w-6 h-6" />
-						&quot;Sultan Ahmet&quot; restaran
+						{title}
 					</h2>
 					<div className="flex items-center justify-between my-2">
 						<div className="flex">
 							<ImLocation2 className="w-5 h-5" />
-							<p className="mx-2 text-base text-gray-400">Andijon</p>
+							<p className="mx-2 text-base text-gray-400">{location}</p>
 						</div>
 						<div className="flex">
 							<FaRulerCombined className="w-5 h-5" />
-							<p className="mx-2 text-base text-gray-400">40 x 65 m</p>
+							<p className="mx-2 text-base text-gray-400">{metrics}</p>
 						</div>
 						<div className="flex">
 							<ImClock className="w-5 h-5" />
-							<p className="mx-2 text-base text-gray-400">3 oy</p>
+							<p className="mx-2 text-base text-gray-400">{duration}</p>
 						</div>
 					</div>
 				</div>
