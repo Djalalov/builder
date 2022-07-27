@@ -99,9 +99,7 @@ const Hero = () => {
 			</Swiper>
 
 			<div className="">
-				<h1 className="font-extrabold text-transparent bg-clip-text text-5xl bg-gradient-to-bl dark:from-white from-slate-900 dark:to-primary to-primary pt-4 px-4 ">
-					Lorem ipsum dolor.
-				</h1>
+				<h1 className="section__title">Lorem ipsum dolor.</h1>
 				<p className="font-semibold py-4 px-4 text-gray-700 dark:text-zinc-400/80">
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam
 					cuebitis ad velit nostrum tempore? Dignissimos earum delectus atque.
