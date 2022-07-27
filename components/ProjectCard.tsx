@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { ImLocation2, ImClock } from "react-icons/im";
 import { FaRulerCombined } from "react-icons/fa";
-import { BsBuilding } from "react-icons/bs";
+import { BsBuilding, BsBoxArrowInRight } from "react-icons/bs";
 import Button from "./Button";
 
 const ProjectCard = ({ image, title, location, metrics, duration }) => {
@@ -15,10 +15,10 @@ const ProjectCard = ({ image, title, location, metrics, duration }) => {
 						alt="Project 1"
 						width={400}
 						height={350}
-						className="scale-100 transition-all ease-in-out  duration-300 hover:scale-125"
+						className="scale-100 transition-all ease-in-out duration-300 hover:scale-125"
 					/>
 				</figure>
-				<div className="card-body bg-white dark:text-base-100 dark:bg-gradient-to-tr dark:from-transparent dark:to-[#17181D]">
+				<div className="card-body shadow-glass bg-gradient-to-bl from-gray-300 to-white dark:text-base-100 dark:bg-gradient-to-tr dark:from-transparent dark:to-[#17181D]">
 					<h2 className="card-title ">
 						<BsBuilding className="text-primary w-6 h-6" />
 						{title}

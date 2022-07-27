@@ -6,7 +6,7 @@ import BG from "../public/BG.png";
 import ProjectCard from "./ProjectCard";
 import project0 from "../public/project0.jpg";
 import project1 from "../public/project1.jpg";
-import project2 from "../public/project2.jpg";
+import project7 from "../public/project7.jpg";
 import project3 from "../public/project3.jpg";
 
 const Projects: NextPage = () => {
@@ -16,13 +16,13 @@ const Projects: NextPage = () => {
 			<h1 className="text-4xl font-bold px-4 mb-8 dark:text-zinc-300">
 				Loremum ip lor sitwe amet elit
 			</h1>
-			{/* Manually inserted for now */}
+			{/* Data Manually inserted for now */}
 			<Image
 				src={BG}
 				alt="Picture of the author"
 				quality="100"
 				layout="fill"
-				className="absolute -z-10 translate-y-64"
+				className="invisible dark:visible translate-y-64 dark:rounded-t-full"
 			/>
 			<div className="z-20">
 				<ProjectCard
@@ -40,7 +40,7 @@ const Projects: NextPage = () => {
 					duration="7 oy"
 				/>
 				<ProjectCard
-					image={project2}
+					image={project7}
 					title="Mehmon xona"
 					location="Andijon"
 					metrics="20 x 8 m"
