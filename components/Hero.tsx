@@ -6,7 +6,7 @@ import { Pagination } from "swiper";
 import SwiperCore, { Autoplay } from "swiper";
 import Image from "next/image";
 import project0 from "../public/project0.jpg";
-import project1 from "../public/project1.jpg";
+import project8 from "../public/project8.jpg";
 import project2 from "../public/project2.jpg";
 import project3 from "../public/project3.jpg";
 import project4 from "../public/project4.jpg";
@@ -44,7 +44,7 @@ const Hero = () => {
 				<SwiperSlide>
 					<Image
 						alt="project1"
-						src={project1}
+						src={project8}
 						layout="responsive"
 						width="100%"
 						height={120}
