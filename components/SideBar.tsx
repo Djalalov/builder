@@ -51,15 +51,15 @@ const SideBar = ({ showNav }) => {
 				showNav ? "left-0 " : "-left-full"
 			}  fixed bottom-0 top-0 items-center w-52 menu z-20 overflow-y-auto bg-base-100/90 dark:bg-[#17181D]/95 backdrop flex flex-col justify-between transition-left ease-in-out duration-300 h-screen`}
 		>
-			<div className="font-semibold text-4xl bg-primary/80 w-full h-20">
-				<h1 className="text-center pt-4">Builder</h1>
+			<div className="font-semibold text-[26px] bg-primary/80 w-full h-20 flex items-center justify-center">
+				<h1>Builder Group</h1>
 			</div>
 
 			<div className="flex flex-col items-center justify-center ">
 				<ul className="space-y-6">
 					{navLinks.map(link => (
 						<li className="flex flex-row font-semibold" key={link.title}>
-							<span className="p-0 font-bold ">{link.icon}</span>
+							<span className="p-2 font-bold ">{link.icon}</span>
 							<Link href={link.path} passHref>
 								<a
 									className={

@@ -22,7 +22,7 @@ const Navbar = () => {
 			<div className="flex items-center justify-between p-2">
 				<Link href="/">
 					<a className="text-center text-2xl font-bold px-2 text-base-100">
-						Builder
+						Builder Group
 					</a>
 				</Link>
 				<div className="flex items-center justify-center gap-2 ">

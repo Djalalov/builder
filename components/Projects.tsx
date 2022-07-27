@@ -8,6 +8,7 @@ import project0 from "../public/project0.jpg";
 import project1 from "../public/project1.jpg";
 import project7 from "../public/project7.jpg";
 import project3 from "../public/project3.jpg";
+import project8 from "../public/project8.jpg";
 
 const Projects: NextPage = () => {
 	return (
@@ -49,6 +50,13 @@ const Projects: NextPage = () => {
 				<ProjectCard
 					image={project3}
 					title="Ali Baba restaran"
+					location="Andijon"
+					metrics="35 x 20 m"
+					duration="3 oy"
+				/>
+				<ProjectCard
+					image={project8}
+					title="Mehmon kutish zali"
 					location="Andijon"
 					metrics="35 x 20 m"
 					duration="3 oy"
