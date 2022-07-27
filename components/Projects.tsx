@@ -5,7 +5,7 @@ import BG from "../public/BG.png";
 
 import ProjectCard from "./ProjectCard";
 import project0 from "../public/project0.jpg";
-import project1 from "../public/project1.jpg";
+import project4 from "../public/project4.jpg";
 import project7 from "../public/project7.jpg";
 import project3 from "../public/project3.jpg";
 import project8 from "../public/project8.jpg";
@@ -34,8 +34,8 @@ const Projects: NextPage = () => {
 					duration="3 oy"
 				/>
 				<ProjectCard
-					image={project1}
-					title="Asaka Savdo Markazi"
+					image={project4}
+					title="Asaka Textil Korhonasi"
 					location="Asaka"
 					metrics="150 x 85 m"
 					duration="7 oy"

@@ -14,7 +14,9 @@ const ProjectCard = ({ image, title, location, metrics, duration }) => {
 						src={image}
 						alt="Project 1"
 						width={400}
-						height={350}
+						height={300}
+						quality={100}
+						layout="intrinsic"
 						className="scale-100 transition-all ease-in-out duration-300 hover:scale-125"
 					/>
 				</figure>
