@@ -38,7 +38,7 @@ const Accordian = ({ title, info, stat }) => {
 		<>
 			<div
 				onClick={() => handleOpen()}
-				className="flex group cursor-pointer h-18 px-2 py-2 mx-4 my-2 bg-[#292C35] dark:bg-secondary/5 transition-all ease-out duration-300 flex-col rounded-xl"
+				className="flex group cursor-pointer h-18 px-2 py-2 mx-4 my-2 bg-[#17181D]/95 dark:bg-secondary/5 transition-all ease-out duration-300 flex-col rounded-xl"
 			>
 				<div className="flex">
 					<div className="flex-1 mr-2 space-y-2 p-2">
@@ -63,7 +63,7 @@ const Accordian = ({ title, info, stat }) => {
 
 				<div>
 					{open && (
-						<div className="border-t-gray-700 dark:border-t-gray-400 text-gray-300 flex rounded-b-xl h-18 px-2 py-2 bg-[#292C35] dark:bg-secondary/5">
+						<div className="border-t-gray-700 dark:border-t-gray-400 text-gray-300 flex rounded-b-xl h-18 px-2 py-2 bg-[#17181D]/80 dark:bg-secondary/5 transition ease-in-out duration:1000">
 							{info}
 						</div>
 					)}
