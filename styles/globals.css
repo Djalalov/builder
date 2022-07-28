@@ -21,7 +21,7 @@
 	}
 
 	.btnPrimary {
-		@apply btn mx-4 btn-primary dark:bg-primary text-white rounded-xl hover:bg-transparent;
+		@apply btn mx-4 btn-primary dark:bg-primary text-base-100 dark:text-primary-content rounded-xl;
 	}
 	.btnSecondary {
 		@apply w-full h-10 hover:bg-primary-focus hover:border-none rounded-t-none bg-primary text-white rounded-b-lg font-medium;
