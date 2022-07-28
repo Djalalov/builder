@@ -2,6 +2,7 @@ import React from "react";
 import type { NextPage } from "next";
 import Image from "next/image";
 import BG from "../public/BG.png";
+import bg2 from "../public/bg2.webp";
 
 import ProjectCard from "./ProjectCard";
 import project0 from "../public/project0.jpg";
@@ -24,6 +25,13 @@ const Projects: NextPage = () => {
 				quality="100"
 				layout="fill"
 				className="invisible dark:visible translate-y-64 dark:rounded-t-full animate-pulse"
+			/>
+			<Image
+				src={bg2}
+				alt="Picture of the author"
+				quality="100"
+				layout="fill"
+				className="visible dark:invisible translate-y-64 dark:rounded-t-full animate-pulse"
 			/>
 			<div className="z-20">
 				<ProjectCard

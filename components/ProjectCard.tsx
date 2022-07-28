@@ -30,12 +30,11 @@ const ProjectCard = ({ image, title, location, metrics, duration }) => {
 						layout="responsive"
 						className="scale-100 transition-all ease-in-out duration-300 hover:scale-150 md:hover:scale-125"
 						/* onClick={() => getCheckBox()} */
-
 						/* htmlFor="my-modal-3" */
 					/>
 				</div>
 
-				<div className="card-body shadow-glass bg-gradient-to-bl from-gray-300 to-white dark:text-base-100 dark:bg-gradient-to-tr dark:from-transparent dark:to-[#17181D]">
+				<div className="card-body bg-white dark:text-base-100 dark:bg-transparent dark:to-[#17181D]">
 					<h2 className="card-title ">
 						<BsBuilding className="text-primary w-6 h-6" />
 						{title}
