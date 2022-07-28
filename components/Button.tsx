@@ -10,10 +10,10 @@ const Button = ({ title }) => {
 			<button
 				ref={ripple}
 				onMouseDown={event}
-				className="btnSecondary flex items-center justify-center dark:text-[#17181D]"
+				className="btnSecondary flex items-center justify-center dark:text-primary-content text-[17px]"
 			>
 				{title}
-				<BsBoxArrowInRight className="ml-2 w-6 h-6" />
+				<BsBoxArrowInRight className="ml-2 w-6 h-6 animate-pulse" />
 			</button>
 		</div>
 	);

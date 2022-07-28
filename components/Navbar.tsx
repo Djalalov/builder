@@ -34,7 +34,7 @@ const Navbar = () => {
 							onChange={() => setShowNav(!showNav)}
 						/>
 						<svg
-							className="swap-off fill-current"
+							className="swap-off fill-current "
 							xmlns="http://www.w3.org/2000/svg"
 							width="28"
 							height="28"
@@ -43,7 +43,7 @@ const Navbar = () => {
 							<path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z" />
 						</svg>
 						<svg
-							className="swap-on fill-current"
+							className="swap-on fill-current "
 							xmlns="http://www.w3.org/2000/svg"
 							width="28"
 							height="28"

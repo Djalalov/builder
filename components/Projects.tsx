@@ -13,7 +13,7 @@ import project8 from "../public/project8.jpg";
 const Projects: NextPage = () => {
 	return (
 		<div className="z-10 relative">
-			<p className="title">Loyihalar</p>
+			<p className="title super font-extrabold">Loyihalar</p>
 			<h1 className="text-4xl font-bold px-4 mb-8 dark:text-zinc-300">
 				Loremum ip lor sitwe amet elit
 			</h1>
@@ -23,7 +23,7 @@ const Projects: NextPage = () => {
 				alt="Picture of the author"
 				quality="100"
 				layout="fill"
-				className="invisible dark:visible translate-y-64 dark:rounded-t-full"
+				className="invisible dark:visible translate-y-64 dark:rounded-t-full animate-pulse"
 			/>
 			<div className="z-20">
 				<ProjectCard

@@ -39,8 +39,8 @@ const Accordian = ({ title, info, stat }) => {
 			<div
 				onClick={() => handleOpen()}
 				className={`${
-					open ? "rounded-t-xl my-0" : "rounded-xl my-2"
-				} flex group cursor-pointer h-18 px-2 py-2 mx-4 bg-[#292C35] dark:bg-secondary/5`}
+					open ? "rounded-t-xl my-0 " : "rounded-xl my-2"
+				} flex group cursor-pointer h-18 px-2 py-2 mx-4 bg-[#292C35] dark:bg-secondary/5 transition-all ease-out duration-300`}
 			>
 				<div className="flex-1 mr-2 space-y-2 p-2">
 					<span className="font-bold text-4xl text-white">
@@ -52,7 +52,7 @@ const Accordian = ({ title, info, stat }) => {
 					<button className="btn btn-ghost">
 						<IoEyeOutline className="text-2xl text-zinc-400" />
 					</button>
-					<button className="btn btn-ghost text-gray-400">
+					<button className="group btn btn-ghost text-gray-400">
 						{open ? (
 							<ImCircleUp className="text-xl w-6 h-6" />
 						) : (
