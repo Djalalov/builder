@@ -8,7 +8,7 @@ const Service = props => {
 	return (
 		<div className="flex">
 			<TiTick className="w-7 h-7 text-primary" />
-			<p>{props.title}</p>
+			<p className="translate-y-1 text-base-100 font-semibold">{props.title}</p>
 		</div>
 	);
 };
@@ -23,7 +23,7 @@ const Services: React.FC = () => {
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam
 				cuebitis ad velit nostrum tempore? Dignissimos earum delectus atque.
 			</p>
-			<div className="flex flex-wrap items-center p-4">
+			<div className="flex flex-wrap items-center p-4 gap-4 justify-center">
 				<div>
 					<Service title="Interyer dizayn" />
 					<Service title="Loyiha konsultatsiyasi" />
