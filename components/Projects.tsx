@@ -11,7 +11,7 @@ import project7 from "../public/project7.jpg";
 import project3 from "../public/project3.jpg";
 import project8 from "../public/project8.jpg";
 
-const Projects: NextPage = () => {
+const Projects: React.FC = () => {
 	return (
 		<div className="z-10 relative">
 			<p className="title super font-extrabold">Loyihalar</p>

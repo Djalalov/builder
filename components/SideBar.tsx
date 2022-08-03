@@ -42,7 +42,7 @@ const navLinks = [
 	},
 ];
 
-const SideBar = ({ showNav }) => {
+const SideBar: React.FC<{ showNav: Boolean }> = ({ showNav }) => {
 	const router = useRouter();
 
 	return (

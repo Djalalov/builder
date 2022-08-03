@@ -1,6 +1,6 @@
 import React from "react";
 
-const Footer = () => {
+const Footer: React.FC = () => {
 	return (
 		<div>
 			<footer className="grid grid-flow-row w-full gap-4 place-items-center text-[14px] px-4 pt-4 pb-2 bg-primary text-primary-content ">

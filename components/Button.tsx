@@ -2,7 +2,7 @@ import React from "react";
 import useRipple from "use-ripple-hook";
 import { BsBoxArrowInRight } from "react-icons/bs";
 
-const Button = ({ title }) => {
+const Button: React.FC<{ title: string }> = ({ title }) => {
 	const [ripple, event] = useRipple();
 
 	return (

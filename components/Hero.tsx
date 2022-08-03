@@ -14,7 +14,7 @@ import project5 from "../public/project5.jpg";
 
 import Cards from "./Cards";
 
-const Hero = () => {
+const Hero: React.FC = () => {
 	SwiperCore.use([Autoplay]);
 	return (
 		<div className="container mx-auto md:px-20">

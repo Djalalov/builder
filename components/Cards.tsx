@@ -31,7 +31,7 @@ const data = [
 ];
 
 const Accordian = ({ title, info, stat }) => {
-	const [open, setOpen] = React.useState(false);
+	const [open, setOpen] = React.useState<Boolean>(false);
 
 	const handleOpen = () => setOpen(!open);
 	return (
@@ -73,7 +73,7 @@ const Accordian = ({ title, info, stat }) => {
 	);
 };
 
-const Cards = () => {
+const Cards: React.FC = () => {
 	return (
 		<div>
 			{data.map(data => {

@@ -13,7 +13,7 @@ import { BiBuildings } from "react-icons/bi";
 import { IoPeopleOutline } from "react-icons/io5";
 import { MdOutlineSms } from "react-icons/md";
 
-const Header = () => {
+const Header: React.FC = () => {
 	return (
 		<div className="drawer backdrop-blur-lg ">
 			<input id="my-drawer-3" type="checkbox" className="drawer-toggle " />

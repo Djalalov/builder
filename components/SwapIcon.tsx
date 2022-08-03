@@ -2,7 +2,7 @@ import React from "react";
 import { useTheme } from "next-themes";
 import { SunIcon, MoonIcon } from "@heroicons/react/solid";
 
-const SwapIcon = () => {
+const SwapIcon: React.FC = () => {
 	const { systemTheme, theme, setTheme } = useTheme();
 	const [mounted, setMounted] = React.useState(false);
 

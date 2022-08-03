@@ -9,8 +9,8 @@ import {
 	ImLinkedin,
 } from "react-icons/im";
 
-const Navbar = () => {
-	const [showNav, setShowNav] = useState(false);
+const Navbar: React.FC = () => {
+	const [showNav, setShowNav] = useState<Boolean>(false);
 
 	function getCheckBox() {
 		const cb = document.getElementById("checkBox") as HTMLInputElement | null;
