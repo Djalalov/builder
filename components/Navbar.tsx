@@ -27,6 +27,7 @@ const Navbar: React.FC = () => {
 				</Link>
 				<div className="flex items-center justify-center gap-2 ">
 					<SwapIcon />
+
 					<label className="swap swap-rotate border-none p-2 text-base-100 md:hidden">
 						<input
 							type="checkbox"

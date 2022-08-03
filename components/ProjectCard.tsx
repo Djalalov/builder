@@ -26,7 +26,7 @@ const ProjectCard: React.FC<Props> = props => {
 
 	return (
 		<>
-			<div className="card card-compact flex rounded-xl h-18 m-4 mb-8 bg-[#292C35] dark:bg-[#292C35]/40 ">
+			<div className="card card-compact flex rounded-xl h-18 m-4 bg-[#292C35] dark:bg-[#292C35]/40 ">
 				<div className="overflow-hidden touch-auto">
 					<Image
 						src={props.image}
@@ -68,7 +68,7 @@ const ProjectCard: React.FC<Props> = props => {
 						</div>
 					</div>
 				</div>
-				<div className="card-actions" /* onClick={() => getCheckBox()} */>
+				<div className="card-actions text-primary-content">
 					<Button title="Batafsil" />
 				</div>
 			</div>
