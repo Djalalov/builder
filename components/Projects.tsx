@@ -31,7 +31,7 @@ const Projects: React.FC = () => {
 				layout="fill"
 				className="invisible dark:visible translate-y-64 dark:rounded-full animate-pulse"
 			/>
-			<div className="z-20">
+			<div id="projects" className="z-20">
 				<ProjectCard
 					image={asaka.pr1}
 					title="Sulton Ahmet restaran"

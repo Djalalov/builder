@@ -16,7 +16,7 @@ const Service = props => {
 };
 const Services: React.FC = () => {
 	return (
-		<div>
+		<div id="services" className="">
 			<p className="title super font-extrabold">Xizmatlar</p>
 			<h1 className="text-4xl font-bold px-4 dark:text-zinc-300">
 				Nulla perferendis doloribus eius quod?

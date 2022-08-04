@@ -17,17 +17,17 @@ import { MdOutlineSms } from "react-icons/md";
 const navLinks = [
 	{
 		title: "Biz haqimizda",
-		path: "/",
+		path: "#about",
 		icon: <ImInfo className="w-8 h-8 pl-2" />,
 	},
 	{
 		title: "Loyihalar",
-		path: "/projects",
+		path: "#projects",
 		icon: <BiBuildings className="w-8 h-8 pl-2" />,
 	},
 	{
 		title: "Xizmatlar",
-		path: "/services",
+		path: "#services",
 		icon: <ImClipboard className="w-8 h-8 pl-2" />,
 	},
 	{

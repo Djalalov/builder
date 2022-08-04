@@ -31,7 +31,7 @@ const projects = [
 const Hero: React.FC = () => {
 	SwiperCore.use([Autoplay]);
 	return (
-		<div className="container mx-auto md:px-20">
+		<div id="about" className="container mx-auto md:px-20">
 			<Swiper
 				pagination={{
 					dynamicBullets: true,
