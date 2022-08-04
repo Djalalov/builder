@@ -2,10 +2,20 @@ import React from "react";
 import type { NextPage } from "next";
 import Image from "next/image";
 import BG from "../public/BG.png";
-import bg2 from "../public/bg2.webp";
-
 import ProjectCard from "./ProjectCard";
+import asaka from "../public/asaka";
 
+/* const AsakaProjects = [
+	asaka.pr1,
+	asaka.pr2,
+	asaka.pr3,
+	asaka.pr4,
+	asaka.pr5,
+	asaka.pr6,
+	asaka.pr7,
+	asaka.pr8,
+	asaka.pr9,
+]; */
 const Projects: React.FC = () => {
 	return (
 		<div className="z-10 relative">
@@ -21,22 +31,15 @@ const Projects: React.FC = () => {
 				layout="fill"
 				className="invisible dark:visible translate-y-64 dark:rounded-full animate-pulse"
 			/>
-			{/* 		<Image
-				src={bg2}
-				alt="Picture of the author"
-				quality="100"
-				layout="fill"
-				className="visible dark:invisible translate-y-64 dark:rounded-t-full animate-pulse"
-			/> */}
 			<div className="z-20">
 				<ProjectCard
-					image={""}
+					image={asaka.pr1}
 					title="Sulton Ahmet restaran"
 					location="Andijon"
 					metrics="40 x 25 m"
 					duration="3 oy"
 				/>
-				<ProjectCard
+				{/* <ProjectCard
 					image={""}
 					title="Asaka Textil Korhonasi"
 					location="Asaka"
@@ -63,7 +66,7 @@ const Projects: React.FC = () => {
 					location="Andijon"
 					metrics="35 x 20 m"
 					duration="3 oy"
-				/>
+				/> */}
 			</div>
 		</div>
 	);

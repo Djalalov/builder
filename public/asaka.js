@@ -9,7 +9,6 @@ import pr6 from "./asaka/pr6.jpg";
 import pr7 from "./asaka/pr7.jpg";
 import pr8 from "./asaka/pr8.jpg";
 import pr9 from "./asaka/pr9.jpg";
-import pr10 from "./asaka/pr10.jpg";
 
 export default {
 	pr1,
@@ -21,5 +20,4 @@ export default {
 	pr7,
 	pr8,
 	pr9,
-	pr10,
 };

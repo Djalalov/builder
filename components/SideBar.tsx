@@ -37,7 +37,7 @@ const navLinks = [
 	},
 	{
 		title: "Aloqa",
-		path: "/contacts",
+		path: "#footer",
 		icon: <MdOutlineSms className="w-8 h-8 pl-2" />,
 	},
 ];
