@@ -50,10 +50,10 @@ const Projects: React.FC = () => {
 				/>
 				<ProjectCard
 					image={project7}
-					title="Mehmon xona"
-					location="Andijon"
-					metrics="20 x 8 m"
-					duration="1 oy"
+					title="Asaka Textil	Ofis"
+					location="Asaka"
+					metrics="15 x 8 m"
+					duration="1.5 oy"
 				/>
 				<ProjectCard
 					image={project3}

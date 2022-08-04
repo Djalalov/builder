@@ -4,6 +4,12 @@ import { ImLocation2, ImClock } from "react-icons/im";
 import { FaRulerCombined } from "react-icons/fa";
 import { BsBuilding } from "react-icons/bs";
 import Button from "./Button";
+import { Swiper, SwiperSlide } from "swiper/react";
+// Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+// required modules for Swiper
+import { Pagination } from "swiper";
 
 interface Props {
 	image: any;
@@ -26,20 +32,43 @@ const ProjectCard: React.FC<Props> = props => {
 
 	return (
 		<>
-			<div className="card card-compact flex rounded-xl h-18 m-4 bg-[#292C35] dark:bg-[#292C35]/40 ">
+			<div className="card card-compact flex rounded-xl m-4 bg-[#292C35] dark:bg-[#292C35]/40 ">
 				<div className="overflow-hidden touch-auto">
-					<Image
+					<Swiper
+						pagination={{
+							dynamicBullets: true,
+						}}
+						loop={true}
+						slidesPerView={1}
+						modules={[Pagination]}
+						autoplay={{
+							delay: 3000,
+						}}
+						className="mySwiper"
+					>
+						<SwiperSlide>
+							<Image
+								src={props.image}
+								alt="Project0"
+								width={400}
+								height={400}
+								quality={100}
+								placeholder="blur"
+								layout="responsive"
+								className="scale-100 transition-all ease-in-out duration-300 hover:scale-150 md:hover:scale-125"
+							/>
+						</SwiperSlide>
+					</Swiper>
+					{/* 	<Image
 						src={props.image}
 						alt="Project 1"
 						width={400}
-						height={300}
+						height={400}
 						quality={100}
 						placeholder="blur"
 						layout="responsive"
 						className="scale-100 transition-all ease-in-out duration-300 hover:scale-150 md:hover:scale-125"
-						/* onClick={() => getCheckBox()} */
-						/* htmlFor="my-modal-3" */
-					/>
+					/> */}
 				</div>
 
 				<div className="card-body bg-white dark:text-base-100 dark:bg-transparent dark:to-[#17181D]">
