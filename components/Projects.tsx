@@ -5,11 +5,6 @@ import BG from "../public/BG.png";
 import bg2 from "../public/bg2.webp";
 
 import ProjectCard from "./ProjectCard";
-import project0 from "../public/project0.jpg";
-import project4 from "../public/project4.jpg";
-import project7 from "../public/project7.jpg";
-import project3 from "../public/project3.jpg";
-import project8 from "../public/project8.jpg";
 
 const Projects: React.FC = () => {
 	return (
@@ -35,35 +30,35 @@ const Projects: React.FC = () => {
 			/> */}
 			<div className="z-20">
 				<ProjectCard
-					image={project0}
+					image={""}
 					title="Sulton Ahmet restaran"
 					location="Andijon"
 					metrics="40 x 25 m"
 					duration="3 oy"
 				/>
 				<ProjectCard
-					image={project4}
+					image={""}
 					title="Asaka Textil Korhonasi"
 					location="Asaka"
 					metrics="150 x 85 m"
 					duration="7 oy"
 				/>
 				<ProjectCard
-					image={project7}
+					image={""}
 					title="Asaka Textil	Ofis"
 					location="Asaka"
 					metrics="15 x 8 m"
 					duration="1.5 oy"
 				/>
 				<ProjectCard
-					image={project3}
+					image={""}
 					title="Ali Baba restaran"
 					location="Andijon"
 					metrics="35 x 20 m"
 					duration="3 oy"
 				/>
 				<ProjectCard
-					image={project8}
+					image={""}
 					title="Mehmon kutish zali"
 					location="Andijon"
 					metrics="35 x 20 m"

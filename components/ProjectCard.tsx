@@ -41,34 +41,23 @@ const ProjectCard: React.FC<Props> = props => {
 						loop={true}
 						slidesPerView={1}
 						modules={[Pagination]}
-						autoplay={{
-							delay: 3000,
-						}}
 						className="mySwiper"
 					>
 						<SwiperSlide>
 							<Image
-								src={props.image}
-								alt="Project0"
 								width={400}
 								height={400}
-								quality={100}
-								placeholder="blur"
+								alt="projects"
+								src={props.image}
 								layout="responsive"
+								placeholder="blur"
+								objectFit="cover"
+								priority={true}
+								quality={100}
 								className="scale-100 transition-all ease-in-out duration-300 hover:scale-150 md:hover:scale-125"
 							/>
 						</SwiperSlide>
 					</Swiper>
-					{/* 	<Image
-						src={props.image}
-						alt="Project 1"
-						width={400}
-						height={400}
-						quality={100}
-						placeholder="blur"
-						layout="responsive"
-						className="scale-100 transition-all ease-in-out duration-300 hover:scale-150 md:hover:scale-125"
-					/> */}
 				</div>
 
 				<div className="card-body bg-white dark:text-base-100 dark:bg-transparent dark:to-[#17181D]">

@@ -9,22 +9,23 @@ import "swiper/css/pagination";
 // required modules for Swiper
 import { Pagination } from "swiper";
 import SwiperCore, { Autoplay } from "swiper";
-// Project hero Images
-import images from "../public/images";
+// HeroImages
+import HeroImages from "../public/HeroImages";
 //Component
 import Cards from "./Cards";
 
 const projects = [
-	images.project0,
-	images.project1,
-	images.project2,
-	images.project3,
-	images.project4,
-	images.project5,
-	images.project6,
-	images.project7,
-	images.project8,
-	images.project9,
+	HeroImages.project0,
+	HeroImages.project1,
+	HeroImages.project2,
+	HeroImages.project3,
+	HeroImages.project4,
+	HeroImages.project5,
+	HeroImages.project6,
+	HeroImages.project7,
+	HeroImages.project8,
+	HeroImages.project9,
+	HeroImages.project10,
 ];
 
 const Hero: React.FC = () => {
@@ -79,49 +80,3 @@ const Hero: React.FC = () => {
 };
 
 export default Hero;
-
-////////////////////////////////////////////
-/* 		<Swiper
-				zoom={true}
-				pagination={{
-					clickable: true,
-				}}
-				modules={[Zoom, Pagination]}
-				className="mySwiper"
-				loop={true}
-				slidesPerView={1}
-				autoplay={{
-					delay: 3000,
-				}}
-			>
-				<SwiperSlide>
-					<div className="swiper-zoom-container">
-						<img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-					</div>
-				</SwiperSlide>
-				<SwiperSlide>
-					<div className="swiper-zoom-container">
-						<img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-					</div>
-				</SwiperSlide>
-				<SwiperSlide>
-					<div className="swiper-zoom-container">
-						<img src="https://swiperjs.com/demos/images/nature-5.jpg" />
-					</div>
-				</SwiperSlide>
-				<SwiperSlide>
-					<div className="swiper-zoom-container">
-						<img src="https://swiperjs.com/demos/images/nature-6.jpg" />
-					</div>
-				</SwiperSlide>
-				<SwiperSlide>
-					<div className="swiper-zoom-container">
-						<img src="https://swiperjs.com/demos/images/nature-7.jpg" />
-					</div>
-				</SwiperSlide>
-				<SwiperSlide>
-					<div className="swiper-zoom-container">
-						<img src="https://swiperjs.com/demos/images/nature-8.jpg" />
-					</div>
-				</SwiperSlide>
-			</Swiper> */
