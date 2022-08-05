@@ -27,7 +27,7 @@ const SwapIcon: React.FC = () => {
 			) : (
 				<div className="swap-rotate">
 					<MoonIcon
-						className="swap-off w-7 h-7 text-base-100"
+						className="swap-off w-7 h-7 "
 						role="button"
 						onClick={() => setTheme("dark")}
 					/>

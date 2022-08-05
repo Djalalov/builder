@@ -18,17 +18,15 @@ const Navbar: React.FC = () => {
 	}
 
 	return (
-		<nav className="md:flex justify-between items-center bg-[#17181D]/90 dark:bg-[#17181D]/90 backdrop-blur-sm sticky top-0 z-50 h-14">
+		<nav className="md:flex justify-between text-[#292C35] dark:text-base-100 items-center bg-base-100/90 dark:bg-[#17181D]/90 backdrop-blur-sm sticky !top-0 z-50 h-14">
 			<div className="flex items-center justify-between p-2">
 				<Link href="/">
-					<a className="text-center text-2xl font-bold px-2 text-base-100">
-						Builder Group
-					</a>
+					<a className="text-center text-2xl font-bold px-2 ">Builder Group</a>
 				</Link>
 				<div className="flex items-center justify-center gap-2 ">
 					<SwapIcon />
 
-					<label className="swap swap-rotate border-none p-2 text-base-100 md:hidden">
+					<label className="swap swap-rotate border-none p-2 md:hidden">
 						<input
 							type="checkbox"
 							id="checkBox"
