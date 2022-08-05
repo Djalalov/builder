@@ -1,5 +1,4 @@
 import React from "react";
-import type { NextPage } from "next";
 import Image from "next/image";
 import BG from "../public/BG.png";
 import ProjectCard from "./ProjectCard";
@@ -18,7 +17,7 @@ const AsakaProjects = [
 ];
 
 const ImgFunc = () => {
-	return AsakaProjects.map((asaka, index) => {
+	AsakaProjects.map((asaka, index) => {
 		<Image
 			key={index}
 			width={400}
@@ -32,6 +31,8 @@ const ImgFunc = () => {
 			quality={100}
 			className="scale-100 transition-all ease-in-out duration-300 hover:scale-150 md:hover:scale-125"
 		/>;
+		console.log(asaka);
+		return asaka;
 	});
 };
 
