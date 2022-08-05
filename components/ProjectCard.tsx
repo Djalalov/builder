@@ -32,7 +32,7 @@ const ProjectCard: React.FC<Props> = props => {
 
 	return (
 		<>
-			<div className="card card-compact flex rounded-xl m-4 bg-[#292C35] dark:bg-[#292C35]/40 ">
+			<div className="card card-compact flex rounded-xl m-4 bg-[#292C35] dark:bg-[#292C35]/40 shadow-lg">
 				<div className="overflow-hidden touch-auto">
 					<Swiper
 						pagination={{
