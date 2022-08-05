@@ -37,7 +37,7 @@ const Accordian = ({ title, info, stat }) => {
 	return (
 		<>
 			<div
-				onClick={() => handleOpen()}
+				//onClick={() => handleOpen()}
 				className="flex group cursor-pointer h-18 px-2 py-2 mx-4 my-2 bg-base-100 dark:bg-secondary/5 transition-all ease-out duration-300 flex-col rounded-xl shadow-lg"
 			>
 				<div className="flex">
