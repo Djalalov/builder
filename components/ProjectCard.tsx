@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import React, { ReactElement, ReactNode } from "react";
 import Image from "next/image";
 import { ImLocation2, ImClock } from "react-icons/im";
 import { FaRulerCombined } from "react-icons/fa";
@@ -20,16 +20,6 @@ interface Props {
 }
 
 const ProjectCard: React.FC<Props> = props => {
-	/* const [showModal, setShowModal] = React.useState<Boolean>(false);
-
-	function getCheckBox() {
-		const modal = document.getElementById(
-			"checkBox"
-		) as HTMLInputElement | null;
-		modal.checked = false;
-		console.log(modal.checked);
-	} */
-
 	return (
 		<>
 			<div className="card card-compact flex rounded-xl m-4 bg-[#292C35] dark:bg-[#292C35]/40 shadow-lg">
@@ -44,7 +34,8 @@ const ProjectCard: React.FC<Props> = props => {
 						className="mySwiper"
 					>
 						<SwiperSlide>
-							<Image
+							{props.image}
+							{/* <Image
 								width={400}
 								height={400}
 								alt="projects"
@@ -55,7 +46,7 @@ const ProjectCard: React.FC<Props> = props => {
 								priority={true}
 								quality={100}
 								className="scale-100 transition-all ease-in-out duration-300 hover:scale-150 md:hover:scale-125"
-							/>
+							/> */}
 						</SwiperSlide>
 					</Swiper>
 				</div>

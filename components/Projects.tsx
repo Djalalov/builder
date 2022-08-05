@@ -5,7 +5,7 @@ import BG from "../public/BG.png";
 import ProjectCard from "./ProjectCard";
 import asaka from "../public/asaka";
 
-/* const AsakaProjects = [
+const AsakaProjects = [
 	asaka.pr1,
 	asaka.pr2,
 	asaka.pr3,
@@ -15,10 +15,29 @@ import asaka from "../public/asaka";
 	asaka.pr7,
 	asaka.pr8,
 	asaka.pr9,
-]; */
+];
+
+const ImgFunc = () => {
+	return AsakaProjects.map((asaka, index) => {
+		<Image
+			key={index}
+			width={400}
+			height={400}
+			alt="projects"
+			src={asaka}
+			layout="responsive"
+			placeholder="blur"
+			objectFit="cover"
+			priority={true}
+			quality={100}
+			className="scale-100 transition-all ease-in-out duration-300 hover:scale-150 md:hover:scale-125"
+		/>;
+	});
+};
+
 const Projects: React.FC = () => {
 	return (
-		<div className="z-10 relative">
+		<div className="z-10 relative pt-4">
 			<p className="title super font-extrabold">Loyihalar</p>
 			<h1 className="text-4xl font-bold px-4 mb-8 dark:text-zinc-300">
 				Loremum ip lor sitwe amet elit
@@ -33,11 +52,11 @@ const Projects: React.FC = () => {
 			/>
 			<div id="projects" className="z-20">
 				<ProjectCard
-					image={asaka.pr1}
-					title="Sulton Ahmet restaran"
+					image={ImgFunc}
+					title="Asaka Textil Korhonasi"
 					location="Andijon"
-					metrics="40 x 25 m"
-					duration="3 oy"
+					metrics="150 x 85 m"
+					duration="7 oy"
 				/>
 				{/* <ProjectCard
 					image={""}
