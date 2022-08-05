@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@heroicons/react": "^1.0.6",
+    "cloudinary-react": "^1.8.1",
     "daisyui": "^2.18.1",
     "next": "12.2.1",
     "next-theme": "^0.1.5",
