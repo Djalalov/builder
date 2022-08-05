@@ -65,7 +65,7 @@ const Hero: React.FC = () => {
 					</SwiperSlide>
 				))}
 			</Swiper> */}
-			<div className="z-20 relative pt-20">
+			<div className="z-20 relative pt-12">
 				<div>
 					<h1 className="section__title">Lorem ipsum dolor.</h1>
 					<p className="font-semibold py-4 px-4 text-base-100">
@@ -76,7 +76,7 @@ const Hero: React.FC = () => {
 				<button className="btnPrimary">Batafsil</button>
 
 				{/*=============== Statistics ==============*/}
-				<div className="flex flex-col mt-6 pt-2">
+				<div className="flex flex-col pt-2">
 					<Cards />
 				</div>
 			</div>
