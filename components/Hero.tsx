@@ -32,7 +32,7 @@ const projects = [
 const Hero: React.FC = () => {
 	SwiperCore.use([Autoplay]);
 	return (
-		<div id="about" className="container mx-auto md:px-20 relative h-[100vh]">
+		<div id="about" className="container mx-auto md:px-20 relative h-[95vh]">
 			<section>
 				<VideoPlayer />
 			</section>
@@ -69,8 +69,8 @@ const Hero: React.FC = () => {
 				<div>
 					<h1 className="section__title">Lorem ipsum dolor earum.</h1>
 					<p className="font-semibold py-2 px-4 text-base-100">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam
-						cuebitis ad velit nostrum tempore? Dignissimos earum delectus atque.
+						Lorem ipsum dolor sit amet, adipisicing elit. Magnam cuebitis ad
+						velit nostrum tempore? Dignissimos earum atque.
 					</p>
 				</div>
 				<button className="btnPrimary">Batafsil</button>
