@@ -36,18 +36,6 @@ const Hero: React.FC = () => {
 			<section>
 				<VideoPlayer />
 			</section>
-			{/* 	<video
-				autoPlay
-				muted
-				loop
-				playsInline
-				className="z-0 absolute left-0 top-0 w-full h-1/2 object-cover"
-			>
-				<source
-					src="https://res.cloudinary.com/builder9977/video/upload/v1659693356/vid_builder.mp4"
-					type="video/mp4; codecs=hvc1"
-				/>
-			</video> */}
 			{/* <Swiper
 				pagination={{
 					dynamicBullets: true,
@@ -91,7 +79,6 @@ const Hero: React.FC = () => {
 					<Cards />
 				</div>
 			</div>
-			{/* https://res.cloudinary.com/builder9977/image/upload/v1659692667/cld-sample-2.jpg */}
 		</div>
 	);
 };
