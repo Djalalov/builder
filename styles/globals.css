@@ -44,6 +44,6 @@ html {
 		@apply font-bold pt-8 pb-2 px-4 text-primary-focus dark:text-primary;
 	}
 	.section__title {
-		@apply font-extrabold text-transparent bg-clip-text text-5xl bg-gradient-to-bl from-white dark:to-primary to-primary pt-8 px-4;
+		@apply font-extrabold text-transparent bg-clip-text text-4xl bg-gradient-to-bl from-white dark:to-primary to-primary pt-8 px-4;
 	}
 }

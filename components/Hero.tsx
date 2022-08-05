@@ -32,7 +32,7 @@ const projects = [
 const Hero: React.FC = () => {
 	SwiperCore.use([Autoplay]);
 	return (
-		<div id="about" className="container mx-auto md:px-20 relative">
+		<div id="about" className="container mx-auto md:px-20 relative h-[100vh]">
 			<section>
 				<VideoPlayer />
 			</section>
@@ -65,10 +65,10 @@ const Hero: React.FC = () => {
 					</SwiperSlide>
 				))}
 			</Swiper> */}
-			<div className="z-20 relative pt-12">
+			<div className="z-20 relative pt-48">
 				<div>
-					<h1 className="section__title">Lorem ipsum dolor.</h1>
-					<p className="font-semibold py-4 px-4 text-base-100">
+					<h1 className="section__title">Lorem ipsum dolor earum.</h1>
+					<p className="font-semibold py-2 px-4 text-base-100">
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam
 						cuebitis ad velit nostrum tempore? Dignissimos earum delectus atque.
 					</p>
@@ -76,9 +76,9 @@ const Hero: React.FC = () => {
 				<button className="btnPrimary">Batafsil</button>
 
 				{/*=============== Statistics ==============*/}
-				<div className="flex flex-col pt-2">
-					<Cards />
-				</div>
+			</div>
+			<div className="z-20 relative pt-2 mt-2">
+				<Cards />
 			</div>
 		</div>
 	);
