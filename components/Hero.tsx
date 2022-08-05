@@ -65,7 +65,7 @@ const Hero: React.FC = () => {
 					</SwiperSlide>
 				))}
 			</Swiper> */}
-			<div className="z-20 relative pt-48">
+			<div className="z-20 relative pt-52">
 				<div>
 					<h1 className="section__title">Lorem ipsum dolor earum.</h1>
 					<p className="font-semibold py-2 px-4 text-base-100">

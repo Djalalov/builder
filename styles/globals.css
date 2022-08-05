@@ -31,7 +31,7 @@ html {
 	}
 
 	.btnPrimary {
-		@apply btn btn-sm mx-4 btn-primary bg-primary/80 dark:bg-primary/80 text-base-100  rounded-xl backdrop-blur-xl;
+		@apply btn btn-sm mx-4 btn-primary bg-primary dark:bg-primary text-base-100  rounded-xl;
 	}
 	.btnSecondary {
 		@apply w-full h-10 hover:bg-primary-focus hover:border-none rounded-t-none bg-primary text-primary-content rounded-b-lg font-medium;
