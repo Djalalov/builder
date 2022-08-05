@@ -13,6 +13,7 @@ import SwiperCore, { Autoplay } from "swiper";
 import HeroImages from "../public/HeroImages";
 //Component
 import Cards from "./Cards";
+//import vid from "/vid.mp4";
 
 const projects = [
 	HeroImages.project0,
@@ -31,8 +32,17 @@ const projects = [
 const Hero: React.FC = () => {
 	SwiperCore.use([Autoplay]);
 	return (
-		<div id="about" className="container mx-auto md:px-20">
-			<Swiper
+		<div id="about" className="container mx-auto md:px-20 relative">
+			<video
+				autoPlay
+				muted
+				loop
+				playsInline
+				className="z-0 absolute left-0 top-0 w-full h-1/2 object-cover"
+			>
+				<source src="/vid.mp4" type="video/mp4; codecs=hvc1" />
+			</video>
+			{/* <Swiper
 				pagination={{
 					dynamicBullets: true,
 				}}
@@ -59,9 +69,9 @@ const Hero: React.FC = () => {
 						/>
 					</SwiperSlide>
 				))}
-			</Swiper>
-			<div>
-				<div className="">
+			</Swiper> */}
+			<div className="z-20 relative pt-20">
+				<div>
 					<h1 className="section__title">Lorem ipsum dolor.</h1>
 					<p className="font-semibold py-4 px-4 text-gray-700 dark:text-zinc-400/80">
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam
@@ -71,7 +81,7 @@ const Hero: React.FC = () => {
 				<button className="btnPrimary">Batafsil</button>
 
 				{/*=============== Statistics ==============*/}
-				<div className="flex flex-col mt-6">
+				<div className="flex flex-col mt-6 pt-8">
 					<Cards />
 				</div>
 			</div>
