@@ -73,7 +73,7 @@ const Hero: React.FC = () => {
 			<div className="z-20 relative pt-20">
 				<div>
 					<h1 className="section__title">Lorem ipsum dolor.</h1>
-					<p className="font-semibold py-4 px-4 text-gray-700 dark:text-zinc-400/80">
+					<p className="font-semibold py-4 px-4 text-gray-700">
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam
 						cuebitis ad velit nostrum tempore? Dignissimos earum delectus atque.
 					</p>
